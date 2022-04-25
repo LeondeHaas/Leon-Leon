@@ -13,3 +13,5 @@
     </div>
   </body>
 </html>
+
+<!---- kleur: F1F1F1, 23A99B, 5DC6EC, FF6600, FFFF28 ----->
