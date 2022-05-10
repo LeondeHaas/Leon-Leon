@@ -7,11 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="logo.webp">
+      </div>
+      <div class="nav">
+        <a href="index.php"><h3>Hallo</h3></a>
+        <a href="index.php"><h3>Hallo</h3></a>
+        <a href="index.php"><h3>Hallo</h3></a>
+        <a href="index.php"><h3>Hallo</h3></a>
+        <a href="index.php"><h3>Hallo</h3></a>
+      </div>
+      
+    </header>
+  </header>
+  <div class="headerspace"></headerspace>
   <body>
-    <div class="testt">
-      <p>jij dikke wasbever</p>
-    </div>
+   
   </body>
 </html>
 
-<!---- kleur: F1F1F1, 23A99B, 5DC6EC, FF6600, FFFF28 ----->
+<!---- kleur: F1F1F1 (white), 23A99B, 5DC6EC, FF6600, FFFF28 ----->
