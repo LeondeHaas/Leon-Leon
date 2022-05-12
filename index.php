@@ -7,11 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
-    <div class="testt">
-      <p>jij dikke wasbever</p>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img class="img" src="/img/islandlogo.png" alt="" />
+      </div>
+      <div class="pages">
+        <a href="/index.php"><h3>Home</h3></a>
+        <a href="/index.php"><h3>Boeken</h3></a>
+        <a href="/index.php"><h3>Schema</h3></a>
+        <a href="/index.php"><h3>Helpdesk</h3></a>
+        <a href="/index.php"><h3>Favorieten</h3></a>
+      </div>
     </div>
-  </body>
+  </header>
+  <body></body>
 </html>
 
-<!---- kleur: F1F1F1, 23A99B, 5DC6EC, FF6600, FFFF28 ----->
+<!---- kleur: F1F1F1 (white), 23A99B, 5DC6EC, FF6600, FFFF28 ----->

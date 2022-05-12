@@ -4,8 +4,31 @@
   box-sizing: border-box;
 }
 
-.test {
+.header {
+  width: auto;
+  height: 100px;
+  background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo {
   width: 100px;
   height: 100px;
-  background-color: red;
+  border: solid 3px black;
 }
+
+.pages {
+  border: solid black 3px;
+  width: 700px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* .img {
+  width: 100px;
+  height: 100px;
+} */
