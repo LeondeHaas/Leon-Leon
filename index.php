@@ -10,22 +10,18 @@
   <header>
     <div class="header">
       <div class="logo">
-        <img src="logo.webp">
+        <img class="img" src="/img/islandlogo.png" alt="" />
       </div>
-      <div class="nav">
-        <a href="index.php"><h3>Hallo</h3></a>
-        <a href="index.php"><h3>Hallo</h3></a>
-        <a href="index.php"><h3>Hallo</h3></a>
-        <a href="index.php"><h3>Hallo</h3></a>
-        <a href="index.php"><h3>Hallo</h3></a>
+      <div class="pages">
+        <a href="/index.php"><h3>Home</h3></a>
+        <a href="/index.php"><h3>Boeken</h3></a>
+        <a href="/index.php"><h3>Schema</h3></a>
+        <a href="/index.php"><h3>Helpdesk</h3></a>
+        <a href="/index.php"><h3>Favorieten</h3></a>
       </div>
-      
-    </header>
+    </div>
   </header>
-  <div class="headerspace"></headerspace>
-  <body>
-   
-  </body>
+  <body></body>
 </html>
 
 <!---- kleur: F1F1F1 (white), 23A99B, 5DC6EC, FF6600, FFFF28 ----->
