@@ -2,33 +2,62 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  font-family: "Macondo", cursive;
 }
 
 .header {
   width: auto;
   height: 100px;
-  background-color: grey;
+  background-color: #f1f1f17c;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: solid 5px #5dc6ec;
 }
 
 .logo {
   width: 100px;
   height: 100px;
-  border: solid 3px black;
+}
+
+.pg {
+  text-decoration: none;
+  transition: 55ms;
 }
 
 .pages {
-  border: solid black 3px;
-  width: 700px;
+  width: 80%;
   height: 100px;
   display: flex;
   align-items: center;
   text-decoration: none;
+  font-size: 25px;
+  justify-content: space-around;
 }
 
-/* .img {
+h3 {
+  color: #ff6600;
+}
+
+.pg:hover {
+  font-size: 27px;
+  transition: 55ms;
+}
+
+.favs {
+  width: 50px;
+  height: 50px;
+  transition: 55ms;
+}
+
+.favs:hover {
+  width: 55px;
+  height: 55px;
+  transition: 55ms;
+}
+
+.img {
   width: 100px;
   height: 100px;
-} */
+}
