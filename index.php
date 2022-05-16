@@ -15,22 +15,33 @@
     <?php
     include("includes/header.php")
     ?>
-  <body>
-    <div class="container">
-      <div class="leftside">
-        <form action="">
-        <input class="vlucht" type="text">
-        <input class="boeken" type="date" id="datumForm">
-        <input class="boeken" type="date" id="datumForm2 ">
-        </form>
-      </div>
-      <div class="rightside">
-          <form action="">
-        <input class="boeken" type="text">
-        <input class="boeken" type="text">
-      </form>
-      </div>
-    
+    <body>
+      <!----moving background--->
+      <div class="backgroundborder">
+        <video autoplay muted loop> 
+          <source src="igv/video/tropical-island.mp4" type="video/mp4">
+        </video>
+      
+
+      <!----normale content---->
+      <div class="overlappen"> 
+        <div class="container">
+          <div class="leftside">
+            <form action="">
+            <input class="vlucht" type="text">
+            <input class="boeken" type="date" id="datumForm">
+            <input class="boeken" type="date" id="datumForm2 ">
+            </form>
+          </div>
+          <div class="rightside">
+            <form action="">
+              <input class="boeken" type="text">
+              <input class="boeken" type="text">
+            </form>
+          </div>
+        </div>
+      </div> 
+      <!----overlappen stopt---->
     </div>
   </body>
 </html>
