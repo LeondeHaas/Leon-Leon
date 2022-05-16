@@ -7,12 +7,11 @@
 }
 
 body {
-  background-image: url(/../Leon-Leon/img/pexels-jason-steffan-2125075.jpg);
-  background-image: fill;
+  background-image: url(../igv/video/tropical-island.mp4);
 }
 
 .header {
-  width: auto;
+  width: 100%;
   height: 100px;
   background-color: #f1f1f17c;
   display: flex;
@@ -20,6 +19,8 @@ body {
   justify-content: space-between;
   border-bottom: solid 5px #5dc6ec;
   flex-wrap: wrap;
+  position: absolute;
+  z-index: 10;
 }
 
 .logo {
@@ -63,13 +64,40 @@ h3 {
   transition: 55ms;
 }
 
+.backgroundborder {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundborder video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.overlappen {
+  z-index: 1;
+}
+
 .img {
   width: 100px;
   height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  width: 60%;
+  width: 100%;
   height: 275px;
   background-color: #23a99cdb;
   margin-left: auto;
@@ -77,8 +105,9 @@ h3 {
   margin-top: 300px;
   border-radius: 25px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .boeken {

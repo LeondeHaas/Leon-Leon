@@ -7,6 +7,15 @@
     <title>Document</title>
   </head>
   <header>
-  <body></body>
+    <body>
+        <div class="Space">
+          <div class="left-top"></div>
+          <div class="right-top"></div>
+          <div class="left-bot"></div>
+          <div class="right-bot"></div>
+        </div>
+      </body>
   <Footer>
 </html>
+
+<!---- kleur: F1F1F1 (white), 23A99B (green-blue), 5DC6EC(lichtblauw), FF6600 (orange), FFFF28 (geel)----->
