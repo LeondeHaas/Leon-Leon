@@ -12,23 +12,28 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <header>
-    <div class="header">
-      <div class="logo">
-        <img class="img" src="img/islandlogo.png" alt="" />
+    <?php
+    include("includes/header.php")
+    ?>
+  <body>
+    <div class="container">
+      <div class="leftside">
+        <form action="">
+        <input class="vlucht" type="text">
+        <input class="boeken" type="date" id="datumForm">
+        <input class="boeken" type="date" id="datumForm2 ">
+        </form>
       </div>
-      <div class="pages">
-        <a class="pg" href="/index.php"><h3>Home</h3></a>
-        <a class="pg" href="/index.php"><h3>Boeken</h3></a>
-        <a class="pg" href="/index.php"><h3>Schema</h3></a>
-        <a class="pg" href="/index.php"><h3>Helpdesk</h3></a>
-        <a class="pg" href="/index.php"><h3>Inloggen</h3></a>
-        <img class="favs" src="img/star.png" alt="" />
+      <div class="rightside">
+          <form action="">
+        <input class="boeken" type="text">
+        <input class="boeken" type="text">
+      </form>
       </div>
+    
     </div>
-  </header>
-  <body></body>
+  </body>
 </html>
+<script src="js/form.js"></script>
 
 <!---- kleur: F1F1F1 (white), 23A99B, 5DC6EC, FF6600, FFFF28 ----->
