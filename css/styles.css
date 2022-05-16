@@ -6,6 +6,11 @@
   font-family: "Macondo", cursive;
 }
 
+body {
+  background-image: url(/../Leon-Leon/img/pexels-jason-steffan-2125075.jpg);
+  background-image: fill;
+}
+
 .header {
   width: auto;
   height: 100px;
@@ -14,6 +19,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: solid 5px #5dc6ec;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -60,4 +66,39 @@ h3 {
 .img {
   width: 100px;
   height: 100px;
+}
+
+.container {
+  width: 60%;
+  height: 275px;
+  background-color: #23a99cdb;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.boeken {
+  width: 200px;
+  height: 50px;
+}
+
+.vlucht {
+  width: 300px;
+  height: 50px;
+}
+
+.leftside {
+  width: 400px;
+  height: 275px;
+  border: solid black 1px;
+}
+
+.rightside {
+  width: 400px;
+  height: 275px;
+  border: solid black 1px;
 }
