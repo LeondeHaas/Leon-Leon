@@ -1,15 +1,7 @@
-* .space {
-  background-color: #ffff28;
-}
-
-.left-top {
-}
-
-.right-top {
-}
-
-.left-bot {
-}
-
-.right-bot {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  font-family: "Macondo", cursive;
 }
