@@ -5,3 +5,125 @@
   font-family: "Kanit", sans-serif;
   font-family: "Macondo", cursive;
 }
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #f1f1f17c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: solid 5px #5dc6ec;
+  flex-wrap: wrap;
+  position: absolute;
+  z-index: 10;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.pg {
+  text-decoration: none;
+  transition: 55ms;
+}
+
+.pages {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 25px;
+  justify-content: space-around;
+}
+
+h3 {
+  color: #ff6600;
+}
+
+.pg:hover {
+  font-size: 27px;
+  transition: 55ms;
+}
+
+.favs {
+  width: 50px;
+  height: 50px;
+  transition: 55ms;
+}
+
+.favs:hover {
+  width: 55px;
+  height: 55px;
+  transition: 55ms;
+}
+
+.backgroundborder {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundborder video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.overlappen {
+  z-index: 1;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 275px;
+  background-color: #23a99cdb;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.boeken {
+  width: 200px;
+  height: 50px;
+}
+
+.vlucht {
+  width: 300px;
+  height: 50px;
+}
+
+.leftside {
+  width: 400px;
+  height: 275px;
+  border: solid black 1px;
+}
+
+.rightside {
+  width: 400px;
+  height: 275px;
+  border: solid black 1px;
+}
