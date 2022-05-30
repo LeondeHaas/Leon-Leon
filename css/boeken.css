@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerschema {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.597);
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.schema {
+  width: 80%;
+  height: 85px;
+  background-color: lightblue;
+  /* border: solid 3px orange; */
+  margin-bottom: 20px;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.schemainfo {
+  width: 225px;
+  height: 75px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+
+@media only screen and (max-width: 400px) {
+  .schema {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/* CSS voor boeken */
+
+.containerboeken {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.597);
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bestemming {
+  width: 450px;
+  height: 600px;
+  background-color: lightblue;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 100%;
+  height: 250px;
+}
+
+.boekeninfo {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+@media only screen and (max-width: 400px) {
+  .bestemming {
+    width: 90%;
+    height: 550px;
+  }
+
+  .img {
+    width: 100%;
+    height: 200px;
+  }
+}
