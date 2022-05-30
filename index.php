@@ -43,6 +43,9 @@
       </div> 
       <!----overlappen stopt---->
     </div>
+    <?php
+    include("includes/footer.php")
+    ?>
   </body>
 </html>
 <script src="js/form.js"></script>
