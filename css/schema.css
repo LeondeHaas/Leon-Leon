@@ -48,82 +48,84 @@ h3 {
   transition: 55ms;
 }
 
-.favs {
-  width: 50px;
-  height: 50px;
-  transition: 55ms;
-}
-
-.favs:hover {
-  width: 55px;
-  height: 55px;
-  transition: 55ms;
-}
-
-.backgroundborder {
+.containerschema {
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.597);
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.schema {
+  width: 80%;
+  height: 85px;
+  background-color: lightblue;
+  /* border: solid 3px orange; */
+  margin-bottom: 20px;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
-.backgroundborder video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.overlappen {
-  z-index: 1;
-}
-
-.img {
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
+.schemainfo {
+  width: 225px;
+  height: 75px;
+  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Oswald", sans-serif;
 }
 
-.container {
+@media only screen and (max-width: 400px) {
+  .schema {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/* CSS voor boeken */
+
+.containerboeken {
   width: 100%;
-  height: 275px;
-  background-color: #23a99cdb;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 300px;
-  border-radius: 25px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.597);
+  justify-content: space-around;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 
-.boeken {
-  width: 200px;
-  height: 50px;
+.bestemming {
+  width: 450px;
+  height: 600px;
+  background-color: lightblue;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.vlucht {
-  width: 300px;
-  height: 50px;
+.img {
+  width: 100%;
+  height: 250px;
 }
 
-.leftside {
-  width: 400px;
-  height: 275px;
-  border: solid black 1px;
+.boekeninfo {
+  width: 100%;
+  height: 100px;
+  background-color: red;
 }
 
-.rightside {
-  width: 400px;
-  height: 275px;
-  border: solid black 1px;
+@media only screen and (max-width: 400px) {
+  .bestemming {
+    width: 90%;
+    height: 550px;
+  }
+
+  .img {
+    width: 100%;
+    height: 200px;
+  }
 }
