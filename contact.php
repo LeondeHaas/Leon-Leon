@@ -16,35 +16,39 @@
   <?php
     include("includes/header.php")
     ?>
-  <body>
-      <!----moving background--->
-      <div class="backgroundborder">
-        <video autoplay muted loop> 
-          <source src="igv/video/tropical-island2.mp4" type="video/mp4">
-        </video>
-        
-        <div class="container">
-        <div class="contact-box">
-            <div class="left"></div>
-            <div class="right">
-                <h2>Contact Us</h2>
-                <input type="text" class="field" placeholder="Your Name">
-                <input type="text" class="field" placeholder="Your Email">
-                <input type="text" class="field" placeholder="Phone">
-                <textarea placeholder="Message" class="field"></textarea>
-                <button class="btn">Send</button>
-            </div>
-        </div>
-    </div>
+  <body> 
 
-    <?php
-    include("includes/footer.php")
-    ?>
-    <footer>
-        <p>  © Leon's | LionFlights | 🦁💢 </p>
-    </footer>    
+  <div class="backgroundborder">
+        <video autoplay muted loop> 
+          <source src="igv/video/tropical-island.mp4" type="video/mp4">
+        </video>
+
+      <div class="headerspace"></div>
+        <div class="container">
+          <div class="contact-box">
+              <div class="left">
+                <div class="plaatje">
+                  <img class="zeikantlogo" src="igv/img/helpdesk.png" alt="">
+                </div>
+              </div>
+              <div class="right">
+                  <h2>Contact Us</h2>
+                  <input type="text" class="field" placeholder="Your Name">
+                  <input type="text" class="field" placeholder="Your Email">
+                  <input type="text" class="field" placeholder="Phone">
+                  <textarea placeholder="Message" class="field"></textarea>
+                  <button class="btn">Send</button>
+              </div>
+          </div>
+        </div>
+        
+  </div>
+     
+      <?php
+      include("includes/footer.php")
+      ?>     
+
   </body>
 </html>
 
 <!---- kleur: F1F1F1 (white), 23A99B, 5DC6EC, FF6600, FFFF28 ----->
-
