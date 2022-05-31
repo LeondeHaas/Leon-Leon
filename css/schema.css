@@ -6,6 +6,30 @@
   font-family: "Macondo", cursive;
 }
 
+.hidden {
+  width: 100%;
+  height: 100px;
+}
+
+.backgroundborder {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundborder video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
 .header {
   width: 100%;
   height: 100px;
@@ -52,37 +76,64 @@ h3 {
   width: 100%;
   height: auto;
   background-color: rgba(0, 0, 0, 0.597);
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
+  position: absolute;
+}
+
+.favs {
+  width: 50px;
+  height: 50px;
+  transition: 55ms;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .schema {
   width: 80%;
   height: 85px;
   background-color: lightblue;
-  /* border: solid 3px orange; */
   margin-bottom: 20px;
   justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  border: 2px solid black;
 }
 
 .schemainfo {
   width: 225px;
   height: 75px;
-  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Oswald", sans-serif;
 }
 
+.schematext {
+  width: 100%;
+  text-align: center;
+  color: wheat;
+  border: 3px solid black;
+  margin-top: 20px;
+}
+
 @media only screen and (max-width: 400px) {
   .schema {
     width: 100%;
+    height: 400px;
+  }
+
+  .containerschema {
     height: 400px;
   }
 }

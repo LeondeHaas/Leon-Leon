@@ -20,7 +20,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: solid 5px #5dc6ec;
-  flex-wrap: wrap;
   position: absolute;
   z-index: 10;
 }
@@ -33,6 +32,8 @@ body {
 .pg {
   text-decoration: none;
   transition: 55ms;
+  height: 40px;
+  width: 200px;
 }
 
 .pages {
@@ -42,7 +43,6 @@ body {
   align-items: center;
   text-decoration: none;
   font-size: 25px;
-  justify-content: space-around;
 }
 
 h3 {
@@ -145,4 +145,25 @@ h3 {
   width: 400px;
   height: 275px;
   border: solid black 1px;
+}
+
+@media only screen and (max-width: 400px) {
+  .header {
+    height: 210px;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .favs {
+    position: absolute;
+    margin-left: 200px;
+  }
+
+  .pages {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+  }
 }
