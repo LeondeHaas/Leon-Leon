@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  font-family: "Macondo", cursive;
+}
+
+/* header */
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #f1f1f17c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: solid 5px #5dc6ec;
+  position: absolute;
+  z-index: 10;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pg {
+  text-decoration: none;
+  transition: 55ms;
+  height: 40px;
+  width: 200px;
+}
+
+.pages {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+h3 {
+  color: #ff6600;
+}
+
+.pg:hover {
+  font-size: 27px;
+  transition: 55ms;
+}
+
+.favs {
+  width: 50px;
+  height: 50px;
+  transition: 55ms;
+}
+
+.favs:hover {
+  width: 55px;
+  height: 55px;
+  transition: 55ms;
+}
+
+/* footer */
+.footer {
+  width: auto;
+  height: 20px;
+  background-color: #23a99cc5;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* from */
+.container {
+  width: 500px;
+  height: 450px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #23a99cd0;
+  margin-top: 160px;
+  z-index: 1;
+  border-radius: 20%;
+}
+
+.container img {
+  width: 150px;
+  height: 150px;
+  margin-top: -60px;
+  z-index: 1;
+}
+
+input[type="text"],
+input[type="password"] {
+  margin-top: 30px;
+  height: 45px;
+  width: 300px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding-left: 40px;
+  z-index: 2;
+}
+
+.form-input::before {
+  content: "\f007";
+  font-family: "FontAwesome";
+  padding-left: 07px;
+  padding-top: 40px;
+  position: absolute;
+  font-size: 35px;
+  color: #2980b9;
+  z-index: 2;
+}
+
+.form-input:nth-child(2)::before {
+  content: "\f023";
+  z-index: 3;
+}
+
+.btn-login {
+  padding: 15px 25px;
+  border: none;
+  background-color: #297fb9e6;
+  color: #fff;
+  z-index: 2;
+}
+
+/* achtergrond */
+.backgroundborder {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroundborder video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
