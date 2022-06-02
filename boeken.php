@@ -20,12 +20,10 @@
     <div class="hidden"></div>
     <div class="containerboeken">
       <div class="bestemming">
-        <img class="boekenimg" src="igv/img/tropical island.jpg" alt="" />
+        <img class="boekenimg" src="igv/img/tropical island.jpg" alt="" />    
         <div class="boekeninfo">
-          <h1>Amerika</h1>
-        </div>
-        <div class="boekeninfo">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo corporis soluta nihil consequuntur in aliquid quasi, quo quidem ab labore cumque sit sunt sed. Culpa molestias ipsa quo iste!
+          <h1 class="land">Amerika</h1>
+          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo corporis soluta nihil consequuntur in aliquid quasi, quo quidem ab labore cumque sit sunt sed. Culpa molestias ipsa quo iste!</h2>
         </div>
         <div class="boekeninfo">
           <button class="boek">Boek vanaf $455!</button>
