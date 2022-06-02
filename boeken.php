@@ -12,15 +12,25 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
+  <?php
+    include("includes/header.php")
+    ?>
   <body>
+    <div class="hidden"></div>
     <div class="containerboeken">
       <div class="bestemming">
-        <img class="img" src="images/pexels-ingo-joseph-188029.jpg" alt="" />
-        <div class="boekeninfo"></div>
-        <div class="boekeninfo"></div>
-        <div class="boekeninfo"></div>
-      </div>
+        <img class="boekenimg" src="igv/img/tropical island.jpg" alt="" />
+        <div class="boekeninfo">
+          <h1>Amerika</h1>
+        </div>
+        <div class="boekeninfo">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo corporis soluta nihil consequuntur in aliquid quasi, quo quidem ab labore cumque sit sunt sed. Culpa molestias ipsa quo iste!
+        </div>
+        <div class="boekeninfo">
+          <button class="boek">Boek vanaf $455!</button>
+        </div>
+      </div>      
     </div>
   </body>
 </html>
