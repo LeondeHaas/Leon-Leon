@@ -140,8 +140,8 @@ h3 {
 }
 
 .plaatje {
-  height: 65%;
-  width: 65%;
+  height: 55%;
+  width: 75%;
 }
 
 .zeikantlogo {
@@ -214,8 +214,38 @@ textarea {
 @media screen and (max-width: 880px) {
   .contact-box {
     grid-template-columns: 1fr;
+    height: 70%;
+    margin-top: 50px;
   }
   .left {
-    height: 200px;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header {
+    height: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .headerspace {
+    height: 300px;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .favs {
+    position: absolute;
+    margin-left: 200px;
+  }
+
+  .pages {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
   }
 }
