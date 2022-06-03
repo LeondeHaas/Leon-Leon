@@ -18,7 +18,6 @@
     ?>
   <body>
     <div class="hidden"></div>
-    <img src="/igv/img/pexels-pixabay-161901.jpg" alt="" />
     <div class="containerboeken">
       <!-- dit is een container boeken       -->
       <div class="bestemming">
@@ -32,8 +31,12 @@
           </h2>
         </div>
         <div class="boekeninfo1">
-          <button class="boek">Boek vanaf $455!</button>
-          <button class="boek1">Laat een review achter</button>
+          <a href="index.php">
+          <button class="boek"><img class="boek2" src="igv/img/001-open-book.png" alt="">Boek vanaf $455!</button>
+            </a<>
+          <a href="reviews.php">
+            <button class="boek1"><img class="boek2" src="igv/img/002-satisfaction.png" alt="">Laat een review achter</button>
+          </a>
         </div>
       </div>
       <!-- dit is een container boeken       -->
