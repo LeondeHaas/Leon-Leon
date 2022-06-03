@@ -19,16 +19,31 @@
   <body>
     <div class="hidden"></div>
     <div class="containerboeken">
+      <!-- dit is een container boeken       -->
       <div class="bestemming">
-        <img class="boekenimg" src="igv/img/tropical island.jpg" alt="" />    
+        <img class="boekenimg" src="igv/img/tropical island.jpg" alt="" />
         <div class="boekeninfo">
           <h1 class="land">Amerika</h1>
-          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo corporis soluta nihil consequuntur in aliquid quasi, quo quidem ab labore cumque sit sunt sed. Culpa molestias ipsa quo iste!</h2>
+          <h2>
+            Lorem ipsum doloR sit amet consectetur adipisicing elit. Dicta illo
+            corporis soluta nihil consequuntur in aliquid quasi, quo quidem ab
+            labore cumque sit sunt sed. Culpa molestias ipsa quo iste!
+          </h2>
         </div>
-        <div class="boekeninfo">
-          <button class="boek">Boek vanaf $455!</button>
+        <div class="boekeninfo1">
+          <a href="index.php">
+          <button class="boek"><img class="boek2" src="igv/img/001-open-book.png" alt="">Boek vanaf $455!</button>
+            </a<>
+          <a href="reviews.php">
+            <button class="boek1"><img class="boek2" src="igv/img/002-satisfaction.png" alt="">Laat een review achter</button>
+          </a>
         </div>
-      </div>      
+      </div>
+      
+      <!-- dit is een container boeken       -->
     </div>
+     <?php
+    include("includes/footer.php")
+    ?>
   </body>
 </html>

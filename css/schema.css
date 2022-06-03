@@ -11,6 +11,18 @@
   height: 100px;
 }
 
+.Copyright {
+  width: auto;
+  height: 20px;
+  background-color: #23a99cc5;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  position: absolute;
+}
+
 .backgroundborder {
   width: 100%;
   height: 100%;
