@@ -7,10 +7,6 @@
   font-family: "Macondo", cursive;
 }
 
-body {
-  background-image: url(../igv/video/tropical-island.mp4);
-}
-
 /* header */
 .header {
   width: 100%;
@@ -67,7 +63,7 @@ h3 {
 }
 
 /* footer */
-.footer {
+.Copyright {
   width: auto;
   height: 20px;
   background-color: #23a99cc5;

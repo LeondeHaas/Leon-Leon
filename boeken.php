@@ -39,7 +39,11 @@
           </a>
         </div>
       </div>
+      
       <!-- dit is een container boeken       -->
     </div>
+     <?php
+    include("includes/footer.php")
+    ?>
   </body>
 </html>

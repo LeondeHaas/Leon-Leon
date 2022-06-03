@@ -23,6 +23,18 @@ body {
   z-index: 10;
 }
 
+/* footer */
+.Copyright {
+  width: auto;
+  height: 20px;
+  background-color: #23a99cc5;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
 .logo {
   width: 100px;
   height: 100px;
