@@ -165,3 +165,31 @@ input[type="password"] {
   height: 100%;
   pointer-events: none;
 }
+
+@media screen and (max-width: 880px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
+  }
+
+  .header {
+    height: 210px;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .favs {
+    position: absolute;
+    margin-left: 200px;
+  }
+
+  .pages {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+  }
+}

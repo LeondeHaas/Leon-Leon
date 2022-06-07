@@ -5,7 +5,6 @@
   font-family: "Kanit", sans-serif;
   font-family: "Macondo", cursive;
 }
-
 .header {
   width: 100%;
   height: 100px;
@@ -14,7 +13,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: solid 5px #5dc6ec;
-  flex-wrap: wrap;
   position: absolute;
   z-index: 10;
 }
@@ -208,11 +206,49 @@ textarea {
   background-color: #fff;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 400px) {
   .contact-box {
     grid-template-columns: 1fr;
   }
   .left {
     height: 200px;
+  }
+
+  .header {
+    height: 210px;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .favs {
+    position: absolute;
+    margin-left: 200px;
+  }
+
+  .pages {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+  }
+
+   .header {
+    height: 210px;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .favs {
+    position: absolute;
+    margin-left: 200px;
+  }
+
+  .pages {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
   }
 }
