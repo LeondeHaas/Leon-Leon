@@ -205,6 +205,15 @@ h3 {
   height: 50px;
 }
 
+.search_bar {
+  background-color: #ff6600;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+}
+
 @media only screen and (max-width: 400px) {
   .bestemming {
     width: 90%;

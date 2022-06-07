@@ -18,6 +18,23 @@
     ?>
   <body>
     <div class="hidden"></div>
+      <div class="searchbar_space">
+        <div class="overlappen"> 
+            <?php
+              if (!empty($_POST)){
+              $search = $_POST['search'];
+              $sql = "SELECT * FROM producten WHERE naam LIKE '%". $search. "%'";
+              } else {
+                $sql = "SELECT * FROM producten ORDER BY categorie DESC";
+              }
+            ?>
+          <form action="bestellen.php" method="POST">
+            <div class="search_bar">
+              <input name="search" type="text" placeholder="Search.." /> 
+            </div>
+          </form>
+        </div> 
+      </div>
     <div class="containerboeken">
       <!-- dit is een container boeken       -->
       <div class="bestemming">
