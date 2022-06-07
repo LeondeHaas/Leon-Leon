@@ -121,26 +121,13 @@ h3 {
   flex-wrap: wrap;
 }
 
-.boeken {
-  width: 200px;
-  height: 50px;
-}
-
-.vlucht {
-  width: 300px;
-  height: 50px;
-}
-
-.leftside {
-  width: 400px;
-  height: 275px;
-  border: solid black 1px;
-}
-
-.rightside {
-  width: 400px;
-  height: 275px;
-  border: solid black 1px;
+.search_bar {
+  background-color: #ff6600;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 400px) {

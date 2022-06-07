@@ -26,21 +26,19 @@
 
       <!----normale content---->
       <div class="overlappen"> 
-        <div class="container">
-          <div class="leftside">
-            <form action="">
-            <input class="vlucht" type="text">
-            <input class="boeken" type="date" id="datumForm">
-            <input class="boeken" type="date" id="datumForm2 ">
-            </form>
+          <?php
+            if (!empty($_POST)){
+            $search = $_POST['search'];
+            $sql = "SELECT * FROM producten WHERE naam LIKE '%". $search. "%'";
+            } else {
+              $sql = "SELECT * FROM producten ORDER BY categorie DESC";
+            }
+          ?>
+        <form action="bestellen.php" method="POST">
+          <div class="search_bar">
+            <input name="search" type="text" placeholder="Search.." /> 
           </div>
-          <div class="rightside">
-            <form action="">
-              <input class="boeken" type="text">
-              <input class="boeken" type="text">
-            </form>
-          </div>
-        </div>
+        </form>
       </div> 
       <!----overlappen stopt---->
     </div>
