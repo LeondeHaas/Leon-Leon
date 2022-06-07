@@ -25,14 +25,14 @@
 
         <div class="container">
             <img src="igv/img/islandlogo.png"/>
-                <form>
+                <form action="includes/login.php" method="POST">
                     <div class="form-input">
-                        <input type="text" name="text" placeholder="Enter the User Name"/>	
+                        <input type="text" name="gebruikersnaam" placeholder="Enter the User Name"/>	
                     </div>
                     <div class="form-input">
-                        <input type="password" name="password" placeholder="password"/>
+                        <input type="password" name="wachtwoord" placeholder="password"/>
                     </div>
-                    <input type="submit" type="submit" value="LOGIN" class="btn-login"/>
+                    <input type="submit" type="submit" value="LOGIN"  name="inlogsubmit" class="btn-login"/>
                 </form>
             </div>
 </div>    
