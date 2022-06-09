@@ -21,7 +21,10 @@
       <video autoplay muted loop>
         <source src="igv/video/Redbird-background.mp4" type="video/mp4" />
       </video>
-
+<div class="backgroundborder">
+    <video autoplay muted loop> 
+        <source src="igv/video/Pexel-Waterfall-video.mp4" type="video/mp4">
+    </video>
       <div class="container">
         <img src="igv/img/islandlogo.png" />
         <form action="includes/login.php" method="POST">
@@ -43,7 +46,6 @@
             class="btn-login"
           />
         </form>
-
         <a href="registreren.php"
           ><button class="register">Registreren</button></a
         >

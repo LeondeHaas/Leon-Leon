@@ -121,6 +121,11 @@ h3 {
   z-index: 1;
 }
 
+h1 {
+  display: contents;
+  color: #ffff28;
+}
+
 input[type="text"],
 input[type="password"] {
   height: 45px;
