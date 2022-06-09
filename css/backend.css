@@ -73,7 +73,9 @@
 .logout {
   margin-left: 10px;
   font-size: 30px;
+  color: #f1f1f1;
 }
+
 .logout:hover {
   color: black;
   text-decoration: underline;
@@ -137,7 +139,7 @@ h3 {
 }
 
 .crud {
-    width: 100%;
-    height: auto;
-    background-color: #ff6600;
+  width: 100%;
+  height: auto;
+  background-color: #ff6600;
 }
