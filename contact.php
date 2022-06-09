@@ -27,9 +27,9 @@
         <div class="container">
           <div class="contact-box">
               <div class="left">
-                <div class="plaatje">
-                  <img class="zeikantlogo" src="igv/img/Signal-symbool.png" alt="">
-                </div>
+                <h1>
+                  Hallo, <br> <br> waarmee kunnen wij u <br> helpen?
+                </h1>
               </div>
               <div class="right">
                   <h2>Contact Us</h2>
