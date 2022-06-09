@@ -21,9 +21,21 @@
           <button class="delete"><h1>Delete</h1></button>
     </div>
    <div class="container">
-       <div class="containerinfo"></div>
+       <div class="containerboeken">
+           <h1>Amerika</h1>
+            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quasi consectetur doloribus repudiandae fugit facere ducimus cumque, distinctio, at dolor exercitationem adipisci excepturi incidunt rerum! Labore eos dolorem harum vitae!</h2>
+             <h2>$499</h2>
+       </div>
    </div>
-   <div class="container"></div>
+   <div class="container1">
+       <div class="containerschema">
+           <h1>Vertrek: 18:55</h1>
+            <h1>Aankomst: 20:35</h1>
+             <h1>Gate: A45</h1>
+              <h1>Bestemming: Amerika</h1>
+               <h1>Vliegtuig: De bazaar</h1>
+       </div>
+   </div>
    <div class="container"></div>
 </body>
 </html>
