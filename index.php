@@ -34,11 +34,16 @@
               $sql = "SELECT * FROM producten ORDER BY categorie DESC";
             }
           ?>
-        <form action="bestellen.php" method="POST">
-          <div class="search_bar">
-            <input name="search" type="text" placeholder="Search.." /> 
+          <form action="bestellen.php" method="POST">
+            <div class="search_bar">
+              <input name="search" type="text" placeholder="Search.." /> 
+            </div>
+          </form>
+        <div class="achtergrond-searchbar">
+          <div class="something">
+            <img class="something" src="igv/img/Lion-logo.webp">
           </div>
-        </form>
+        </div>
       </div> 
       <!----overlappen stopt---->
     </div>

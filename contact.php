@@ -28,7 +28,7 @@
           <div class="contact-box">
               <div class="left">
                 <div class="plaatje">
-                  <img class="zeikantlogo" src="igv/img/helpdesk.png" alt="">
+                  <img class="zeikantlogo" src="igv/img/Signal-symbool.png" alt="">
                 </div>
               </div>
               <div class="right">
