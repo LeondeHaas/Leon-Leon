@@ -43,8 +43,8 @@
           <h1 class="land">Amerika</h1>
           <h2>
             Lorem ipsum doloR sit amet consectetur adipisicing elit. Dicta illo
-            corporis soluta nihil consequuntur in aliquid quasi, quo quidem ab
-            labore cumque sit sunt sed. Culpa molestias ipsa quo iste!
+            corporis soluta nihil co            Lorem ipsum doloR sit amet consectetur adipisicing elit. Dicta illo
+            corporis soluta nihil consequuntur in aliquid quasi, quo quidem abnsequuntur in aliquid quasi, quo quidem ab
           </h2>
         </div>
         <div class="boekeninfo1">
