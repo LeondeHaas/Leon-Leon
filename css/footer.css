@@ -86,9 +86,17 @@ li:hover {
     justify-content: center;
 }
 
+.footerimg {
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+
 @media only screen and (max-width: 400px) {
     .footer {
-        height: 100%;
+        height: auto;
+        padding: 10px;
     }
 
     .input {
@@ -100,24 +108,25 @@ li:hover {
     }
 
     .footerinfo {
-        height: 150px;
+        height: 100%;
         width: 100%;
     }
 
     .footerinfo1 {
-        height: 180px;
+        height: auto;
         width: 100%;
     }
 
     .footerinfo2 {
-        height: 260px;
+        height: 350px;
         width: 100%;
     }
 }
 
-@media only screen and (max-width: 1500px) {
+@media screen and (min-width: 400px) and (max-width: 1000px) {
     .footer {
         height: 100%;
+        padding: 10px;
     }
 
     .input {
@@ -139,7 +148,7 @@ li:hover {
     }
 
     .footerinfo2 {
-        height: 260px;
+        height: 350px;
         width: 100%;
     }
 }

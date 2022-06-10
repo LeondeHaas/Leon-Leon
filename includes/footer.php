@@ -2,9 +2,12 @@
   <div class="footer">
     <div class="footerinfo">
       <h2>Volg ons op social media, blijf up to date voor al jouw behoeften!</h2>
-      <img src="igv/img/001-facebook.png" alt="">
-      <img src="igv/img/002-instagram.png" alt="">
-      <img src="igv/img/003-twitter.png" alt="">
+      <div class="footerimg">
+        <img src="igv/img/001-facebook.png" alt="">
+        <img src="igv/img/002-instagram.png" alt="">
+        <img src="igv/img/003-twitter.png" alt="">
+      </div>
+     
     </div>
     <div class="footerinfo1">
       <div class="list">
@@ -42,7 +45,7 @@
           <a href="inloggen.php">
             <li class="ty">Inloggen</li>
           </a>
-          <a href="register.php">
+          <a href="registreren.php">
             <li>Registreren</li>
           </a>
         </ul>
