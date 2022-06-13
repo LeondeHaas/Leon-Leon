@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/boeken.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,6 +58,7 @@
         </div>
       </div>
       
+  
       <!-- dit is een container boeken       -->
     </div>
      <?php
