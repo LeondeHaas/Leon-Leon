@@ -55,7 +55,7 @@ body {
   justify-content: space-around;
 }
 
-h3 {
+.header h3 {
   color: #ff6600;
 }
 
@@ -63,6 +63,93 @@ h3 {
   font-size: 27px;
   transition: 55ms;
 }
+
+.boeken_keuze {
+  width: 65px;
+  height: 250px;
+  background-color: #23a99ca4;
+  position: fixed;
+  transition: 1s;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-top: 175px;
+}
+
+
+.boeken_keuze:hover {
+  width: 350px;
+  height: 80%;
+  transition: 1s;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 55px;
+  border-top-right-radius: 55px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #23a99c;
+}
+
+.boeken_keuze input {
+  display: none;
+}
+
+.boeken_keuze select {
+  display: none;
+}
+
+.boeken_keuze:hover input {
+  display: block;
+}
+
+.boeken_keuze:hover select {
+  display: block;
+}
+
+.boeken_keuze:hover .hover {
+  display: none;
+}
+
+.boeken_keuze input, select {
+  width: 250px;
+  height: 35px;
+  font-size: 15px;
+  background-color: #f1f1f1;
+}
+
+.boeken_keuze {
+  text-indent: -9999px;
+}
+
+.boeken_keuze:hover {
+  text-indent: 0px;
+}
+
+.hover {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  transition: 1s;
+}
+
+/* .txt {
+  display: none;
+}
+
+.txt:hover {
+  display: block;
+
+} */
+
+/* 
+select {
+  width: 150px;
+  height: 35px;
+} */
 
 .containerboeken {
   width: 100%;
@@ -223,6 +310,29 @@ h2 {
     width: 90%;
     height: auto;
     margin-top: 20px;
+  }
+
+  .boeken_keuze {
+    height: 115px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .boeken_keuze:hover {
+    width: 300px;
+    border-radius: 0;
+    height: 65%;
+  }
+
+  .hover {
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+
+  .hide {
+    display: block;
   }
 
   .img {

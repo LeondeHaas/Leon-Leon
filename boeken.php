@@ -36,6 +36,43 @@
           </form>
         </div> 
       </div>
+      <div class="boeken_keuze">
+         <img class="hover" src="igv/img/001-open-book.png" alt="">
+        <form>
+          <h1>Boek uw vlucht</h1>
+          <br>
+          <label><h3>Voornaam:</h3></label>
+          <input class="trans" type="text">
+          <br>
+          <label><h3>Achternaam:</h3></label>
+          <input type="text">
+          <br>
+          <label><h3>Hoeveel dagen blijft U weg?</h3></label>
+          <input type="number">
+          <br>
+          <label><h3>Hoeveel personen?</h3></label>
+          <input type="number">
+          <br>
+          <label><h3>Vanaf welk vliegveld vertrekt U?</h3></label>
+          <select>
+            <option value = "Amsterdam Airport" selected>Amsterdam Airport</option>
+            <option value = "Eindhoven Airport">Eindhoven Airport</option>
+            <option value = "Teuge Airport">Teuge Airport</option>
+         </select>
+         <br>
+         <label><h3>Waar gaat u naartoe?</h3></label>
+          <select>
+            <option value = "" selected>Amerika</option>
+            <option value = "">Nederland</option>
+            <option value = "">Korea</option>
+            <option value = "">Engeland</option>
+            <option value = "">Japan</option>
+         </select>
+         <br>
+         <br class="hide">
+           <input type="submit" value="Submit">
+        </form>
+      </div>
     <div class="containerboeken">
       <!-- dit is een container boeken       -->
       <div class="bestemming">
@@ -49,16 +86,13 @@
           </h2>
         </div>
         <div class="boekeninfo1">
-          <a href="index.php">
-          <button class="boek"><img class="boek2" src="igv/img/001-open-book.png" alt="">Boek vanaf $455!</button>
-            </a<>
           <a href="reviews.php">
             <button class="boek1"><img class="boek2" src="igv/img/002-satisfaction.png" alt="">Laat een review achter</button>
           </a>
         </div>
       </div>
       
-  
+      
       <!-- dit is een container boeken       -->
     </div>
      <?php
