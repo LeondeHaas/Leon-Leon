@@ -38,39 +38,39 @@
       </div>
       <div class="boeken_keuze">
          <img class="hover" src="igv/img/001-open-book.png" alt="">
-        <form>
-          <h1>Boek uw vlucht</h1>
+        <form action="inludes/reizen.php" method="POST">
+            <h1>Boek uw vlucht</h1>
+            <br>
+            <label><h3>Voornaam:</h3></label>
+            <input name="voornaam" class="trans" type="text">
+            <br>
+            <label><h3>Achternaam:</h3></label>
+            <input type="text" name="achternaam">
+            <br>
+            <label><h3>Hoeveel dagen blijft U weg?</h3></label>
+            <input type="number" name="duur">
+            <br>
+            <label><h3>Hoeveel personen?</h3></label>
+            <input type="number" name="personen">
+            <br>
+            <label><h3>Vanaf welk vliegveld vertrekt U?</h3></label>
+                <select>
+                  <option name="vliegveld" value = "Amsterdam Airport" selected>Amsterdam Airport</option>
+                  <option name="vliegveld" value = "Eindhoven Airport">Eindhoven Airport</option>
+                  <option name="vliegveld" value = "Teuge Airport">Teuge Airport</option>
+                </select>
+            <br>
+            <label><h3>Waar gaat u naartoe?</h3></label>
+              <select>
+                <option name="bestemming" value = "" selected>Amerika</option>
+                <option name="bestemming" value = "">Nederland</option>
+                <option name="bestemming" value = "">Korea</option>
+                <option name="bestemming" value = "">Engeland</option>
+                <option name="bestemming" value = "">Japan</option>
+              </select>
           <br>
-          <label><h3>Voornaam:</h3></label>
-          <input class="trans" type="text">
-          <br>
-          <label><h3>Achternaam:</h3></label>
-          <input type="text">
-          <br>
-          <label><h3>Hoeveel dagen blijft U weg?</h3></label>
-          <input type="number">
-          <br>
-          <label><h3>Hoeveel personen?</h3></label>
-          <input type="number">
-          <br>
-          <label><h3>Vanaf welk vliegveld vertrekt U?</h3></label>
-          <select>
-            <option value = "Amsterdam Airport" selected>Amsterdam Airport</option>
-            <option value = "Eindhoven Airport">Eindhoven Airport</option>
-            <option value = "Teuge Airport">Teuge Airport</option>
-         </select>
-         <br>
-         <label><h3>Waar gaat u naartoe?</h3></label>
-          <select>
-            <option value = "" selected>Amerika</option>
-            <option value = "">Nederland</option>
-            <option value = "">Korea</option>
-            <option value = "">Engeland</option>
-            <option value = "">Japan</option>
-         </select>
-         <br>
-         <br class="hide">
-           <input type="submit" value="Submit">
+          <br class="hide">
+            <input type="submit" value="Submit" name="boekenSubmit>
         </form>
       </div>
     <div class="containerboeken">
