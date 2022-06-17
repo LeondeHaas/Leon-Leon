@@ -57,8 +57,6 @@
           </a>
         </div>
       </div>
-      
-  
       <!-- dit is een container boeken       -->
     </div>
      <?php

@@ -37,7 +37,6 @@
           </div>
           <input
             type="submit"
-            type="submit"
             value="LOGIN"
             name="inlogsubmit"
             class="btn-login"

@@ -91,99 +91,46 @@ h3 {
   align-items: center;
 }
 
-/* from */
-.container {
-  width: 500px;
-  height: 350px;
-  text-align: center;
-  margin: 0 auto;
-  background-color: #23a99cd0;
-  margin-top: 160px;
-  z-index: 1;
-  border-radius: 20%;
-}
-
-.container1 {
-  width: 420px;
-  height: 600px;
-  text-align: center;
-  margin: 0 auto;
-  background-color: #23a99cd0;
-  margin-top: 160px;
-  z-index: 1;
-  border-radius: 20%;
-}
-
-.container img {
-  width: 150px;
-  height: 150px;
-  margin-top: -60px;
-  z-index: 1;
-}
-
-h1 {
-  display: contents;
-  color: #ffff28;
-}
-
-input[type="text"],
-input[type="password"] {
-  height: 45px;
-  width: 300px;
-  font-size: 18px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  padding-left: 40px;
-  z-index: 2;
-}
-
-.form-input:nth-child(2)::before {
-  content: "\f023";
-  z-index: 3;
-}
-
-.btn-login {
-  padding: 15px 25px;
-  border: none;
-  background-color: #297fb9e6;
-  color: #fff;
-  z-index: 2;
-}
-
-/* achtergrond */
-.backgroundborder {
+.header-space {
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  height: 100px;
+}
+
+/* star rating begint hier */
+.star-rating-around {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.backgroundborder video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
+  background-color: #5dc6ecb9;
   width: 100%;
-  height: 100%;
-  pointer-events: none;
+  height: auto;
 }
 
-.register {
-  width: 100px;
-  height: 50px;
+.stars {
+  font-size: 50px;
 }
 
-@media screen and (max-width: 880px) {
-  .contact-box {
-    grid-template-columns: 1fr;
-  }
+.inful-form {
+  width: 100%;
+  height: 300px;
+}
 
-  .left {
-    height: 200px;
-  }
+/*yellow = #ffd900; 
 
+.form-input::before {
+  content: "\f007";
+  font-family: "FontAwesome";
+  padding-left: 07px;
+  padding-top: 40px;
+  position: absolute;
+  font-size: 35px;
+  color: #2980b9;
+  z-index: 2;
+}
+*/
+
+/* media query's*/
+@media only screen and (min-width: 400px) and (max-width: 1300px) {
   .header {
     height: 210px;
   }
@@ -194,7 +141,6 @@ input[type="password"] {
 
   .favs {
     position: absolute;
-    margin-left: 200px;
   }
 
   .pages {
