@@ -100,7 +100,7 @@
   text-decoration: none;
 }
 
-h3 {
+.header h3 {
   color: #ff6600;
   font-size: 25px;
 }
@@ -129,6 +129,14 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.containerreizen {
+  width: auto;
+  height: 175px;
+  background-color: #5dc6ec;
+  font-size: 10px;
+  text-align: center;
 }
 
 .container {
@@ -181,4 +189,50 @@ h3 {
   font-size: 10px;
   text-align: center;
   margin-bottom: 10px;
+}
+
+/* createform */
+
+.create_form_reizen {
+  width: 400px;
+  height: 500px;
+  background-color: #ff6600ea;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: 40%;
+  justify-content: center;
+}
+
+.create_form_schema {
+  width: 400px;
+  height: 500px;
+  background-color: #ff6600ea;
+  margin-right: 40%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.create_form_container {
+  width: 100%;
+  height: 500px;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  
+}
+
+.create_form select {
+  width: 200px;
+  height: 30px;
+}
+
+.create_form textarea {
+  width: 300px;
+  height: 100px;
 }

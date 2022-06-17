@@ -70,7 +70,7 @@
               </select>
           <br>
           <br class="hide">
-            <input type="submit" value="Submit" name="boekenSubmit>
+            <input type="submit" value="Submit" name="boekenSubmit">
         </form>
       </div>
     <div class="containerboeken">
@@ -78,7 +78,7 @@
       <div class="bestemming">
         <img class="boekenimg" src="igv/img/tropical island.jpg" alt="" />
         <div class="boekeninfo">
-          <h1 class="land">Amerika</h1>
+          <h1 class="land"></h1>
           <h2>
             Lorem ipsum doloR sit amet consectetur adipisicing elit. Dicta illo
             corporis soluta nihil co            Lorem ipsum doloR sit amet consectetur adipisicing elit. Dicta illo
