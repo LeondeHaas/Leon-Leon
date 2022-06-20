@@ -48,12 +48,46 @@
       </div> 
       <!----overlappen stopt---->
     </div>
-    <div class="slideshow_main"></div>
+      <div class="slideshow_main">
+        <div class="fotos">
+          <img src="Image1.jpg">
+          <img src="Image2.jpg">
+          <img scr="Image3.jpg">
+          <img scr="Image4.jpg">
+        </div>
+      </div>
     <?php
     include("includes/footer.php")
     ?>
   </body>
 </html>
-<script src="js/form.js"></script>
+<script>
+  var i = 0;
+  var image = [];
+  var time = 3000;
+
+  //img list
+  image[0] = 'Image1.jpg';
+  image[1] = 'Image2.jpg';
+  image[2] = 'Image3.jpg';
+  image[3] = 'Image4.jpg';
+
+  //function
+  function changeImg() {
+    document.slide.scr = image[i];
+
+    if(i < image.lenght - 1) {
+      i++;
+    } else {
+      i = 0;
+    }
+
+    setTimeout("changeImg()", time);
+
+  }
+
+  window.onload = changeImg
+
+</script>
 
 <!---- kleur: F1F1F1 (white), 23A99B, 5DC6EC, FF6600, FFFF28 ----->
