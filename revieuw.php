@@ -10,6 +10,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Macondo&display=swap"
       rel="stylesheet"
+      rel="stylesheet" 
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rating system</title>
@@ -19,8 +20,9 @@
     ?>
 <body>
     <div class="header-space"></div> 
-    <div class="star-rating-around">
-        <div id="1" class="stars"> &#9734; </div>
+    
+    <!-- <div class="star-rating-around">
+        <div id="1" class="stars">  </div>
         <div id="2" class="stars"> &#9734; </div>
         <div id="3" class="stars"> &#9734; </div>
         <div id="4" class="stars"> &#9734; </div>
@@ -64,7 +66,14 @@
         function ResetStarColors () {
             $('.&#9734;').css('color, white');
         }
-    </script>
+    </script> -->
+
+    <h2>Star Rating</h2>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star "></span>
 
 </body>
 </html>

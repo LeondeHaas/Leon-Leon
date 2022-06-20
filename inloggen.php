@@ -41,6 +41,19 @@
             name="inlogsubmit"
             class="btn-login"
           />
+
+          <!-- <script
+          function validateForm() {
+            let x = document.forms["myForm"][""].value;
+            if (x == "") {
+              alert("Name must be filled out");
+              return false;
+            }
+          }
+          >
+          </script> -->
+
+
         </form>
         <a href="registreren.php"
           ><button class="register">Registreren</button></a
