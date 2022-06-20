@@ -97,7 +97,7 @@ h3 {
 }
 
 /* star rating begint hier */
-.star-rating-around {
+/*.star-rating-around {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,20 +114,14 @@ h3 {
   width: 100%;
   height: 300px;
 }
+*/
 
-/*yellow = #ffd900; 
+/*yellow = #ffd900; */
 
-.form-input::before {
-  content: "\f007";
-  font-family: "FontAwesome";
-  padding-left: 07px;
-  padding-top: 40px;
-  position: absolute;
-  font-size: 35px;
-  color: #2980b9;
+.checked {
+  color: orange;
   z-index: 2;
 }
-*/
 
 /* media query's*/
 @media only screen and (min-width: 400px) and (max-width: 1300px) {
