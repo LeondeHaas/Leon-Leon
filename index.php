@@ -48,6 +48,7 @@
       </div> 
       <!----overlappen stopt---->
     </div>
+    <div class="slideshow_main"></div>
     <?php
     include("includes/footer.php")
     ?>
