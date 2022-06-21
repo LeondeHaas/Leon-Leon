@@ -1,10 +1,9 @@
 <?php
-if (isset($_POST['boekenSubmit'])) {
-
+if (isset($_POST['boekenSubmit'])) 
     require_once("../includes/connecter.php");
 
     $sql = "INSERT INTO reizen (voornaam, achternaam, duur, personen, vliegveld, bestemming) VALUES (:voornaam, :achternaam, :duur, :personen, :vliegveld, :bestemming)";
-
+    
     $hashedPassword = password_hash($_POST['wachtwoord'], PASSWORD_DEFAULT);
 
     $stmt = $connect->prepare($sql);
@@ -15,3 +14,4 @@ if (isset($_POST['boekenSubmit'])) {
     $stmt->bindParam(':vliegveld', $_POST['vliegveld']);
     $stmt->bindParam(':bestemming', $_POST['bestemming']);
     $stmt->execute();
+    header('Location: ../contact.php');

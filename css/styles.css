@@ -102,8 +102,8 @@ h3 {
 
 .achtergrond-searchbar {
   background-color: #23a99cc5;
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 600px;
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -166,6 +166,26 @@ h3 {
   .favs {
     position: absolute;
     margin-left: 200px;
+  }
+
+  .pages {
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 1300px) {
+  .header {
+    height: 250px;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .favs {
+    position: absolute;
   }
 
   .pages {
