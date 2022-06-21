@@ -34,11 +34,13 @@
               </div>
               <div class="right">
                   <h2>Contact Us</h2>
-                  <input type="text" class="field" placeholder="Your Name">
-                  <input type="text" class="field" placeholder="Your Email">
-                  <input type="text" class="field" placeholder="Phone">
-                  <textarea placeholder="Message" class="field"></textarea>
-                  <button class="btn">Send</button>
+                  <form method='post' action='includes/contact.php'>
+                    <input type="text" class="field" placeholder="Your Name" name='name'>
+                    <input type="email" class="field" placeholder="Your Email"  name='email'>
+                    <input type="phone" class="field" placeholder="Phone" name='phone'>
+                    <textarea placeholder="Message" class="field" name='message'></textarea>
+                    <button class="btn" name='submit'>Send</button>
+                  </form> 
               </div>
           </div>
         </div>
