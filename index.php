@@ -47,7 +47,7 @@
         </div>
       </div> 
       <!----overlappen stopt---->
-    </div>
+    <!-- </div>
       <div class="slideshow_main">
         <div class="fotos">
           <img src="Image1.jpg">
@@ -88,6 +88,6 @@
 
   window.onload = changeImg
 
-</script>
+</script> -->
 
 <!---- kleur: F1F1F1 (white), 23A99B, 5DC6EC, FF6600, FFFF28 ----->
