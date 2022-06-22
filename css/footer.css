@@ -55,7 +55,7 @@
   list-style: none;
 }
 
-li:hover {
+.footer li:hover {
   font-size: 25px;
   color: lightblue;
 }

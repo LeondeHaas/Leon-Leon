@@ -19,6 +19,11 @@
   z-index: 10;
 }
 
+.header-space {
+  width: 100%;
+  height: 100px;
+}
+
 .img {
   width: 100px;
   height: 100px;
@@ -104,11 +109,12 @@ h3 {
 /* achtergrond */
 .backgroundborder {
   width: 100%;
-  height: 100vh;
+  height: 87vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #5dc6ec;
 }
 
 .backgroundborder video {
@@ -124,8 +130,8 @@ h3 {
 /* informatie blokken er overheen*/
 .informatie-border {
   z-index: 1;
-  height: 400px;
-  width: 25%;
+  height: 575px;
+  width: 40%;
   background-color: #f1f1f17c;
   border: solid black 3px;
   display: flex;
@@ -134,17 +140,42 @@ h3 {
 
 .overLeonKersten {
   width: 50%;
-  height: 250px;
+  height: 450px;
   background-color: #23a99cc7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .overLeondeHaas {
   width: 50%;
-  height: 250px;
+  height: 450px;
   background-color: #ff660080;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .picturepfp {
   height: 75%;
   width: 100%;
+}
+
+.iow {
+  height: 250px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1be;
+}
+
+.border-iow {
+  background-color: #5dc6ecba;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
