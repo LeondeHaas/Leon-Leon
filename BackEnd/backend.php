@@ -17,8 +17,6 @@
     <div class="hidden"></div>
     <div class="crud">
         <a href="createform.php"><button class="create"><h1>Create</h1></button></a>
-         <button class="update"><h1>Update</h1></button>
-          <button class="delete"><h1>Delete</h1></button>
            <a href="https://trello.com/b/pLMXKTJs/crudproject"><button class="trello"><h1>Trello</h1></button></a>
     </div>
 <?php 
@@ -32,13 +30,26 @@
         foreach($result as $product) {
 ?>
    <div class="container">
-       <div class="containerboeken">
-           <h1><?php echo $product['land'];?></h1>
-            <h2><?php echo $product['beschrijving'];?></h2>
-             <h2><?php echo $product['kosten'];?></h2>
-       </div>
+<table>
+    <tr>
+        <th>Land</th>
+        <th>beschrijving</th>
+        <th>kosten</th>
+    </tr>
+    <tr>
+        <td><h1><?php echo $product['land'];?></h1></td>
+        <td><p><?php echo $product['beschrijving'];?></p></td>
+        <td><h2><?php echo $product['kosten'];?></h2></td>
+    </tr>
+       <button class="update"><h1>Update</h1></button>
+        <form method="POST" action="remove.php">
+         <input name="id" value="<?php echo $product['id']; ?>"type="hidden" readonly>
+         <input type="submit" name="verwijderen" value="Delete" class="delete">
+        </form>
+        <table>
+<table>          
    </div>
-   <div class="container1">
+   <!-- <div class="container1">
        <div class="containerschema">
            <h1>Vertrek: </h1>
             <h1>Aankomst: </h1>
@@ -56,7 +67,7 @@
                <h1>vliegveld :<?php echo $product['vliegveld'];?></h1>
                <h1>bestemming :<?php echo $product['bestemming'];?></h1>
     </div>
-   </div>
+   </div> -->
    <?php
         }
 ?>

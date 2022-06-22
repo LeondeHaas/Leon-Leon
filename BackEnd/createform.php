@@ -25,12 +25,6 @@
   </header>
 <body>
     <div class="hidden"></div>
-    <div class="crud">
-        <a href="createform.php"><button class="create"><h1>Create</h1></button></a>
-         <button class="update"><h1>Update</h1></button>
-          <button class="delete"><h1>Delete</h1></button>
-           <a href="https://trello.com/b/pLMXKTJs/crudproject"><button class="trello"><h1>Trello</h1></button></a>
-    </div>
     <div class="create_form_container">
         <div class="create_form_reizen">
             <form method="POST" action="create.php">
@@ -66,37 +60,6 @@
           <br>
           <br class="hide">
             <input type="submit" value="creëer schema" name="boekenSubmit">
-        </form>
-        </div>
-    </div>
-    </div>
-    <!-- overig -->  <!-- overig -->  <!-- overig -->  <!-- overig -->  <!-- overig -->
-   <div class="container">
-       <div class="containerboeken">
-           <h1>Amerika</h1>
-            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quasi consectetur doloribus repudiandae fugit facere ducimus cumque, distinctio, at dolor exercitationem adipisci excepturi incidunt rerum! Labore eos dolorem harum vitae!</h2>
-             <h2>$499</h2>
-       </div>
-   </div>
-   <div class="container1">
-       <div class="containerschema">
-           <h1>Vertrek: </h1>
-            <h1>Aankomst: </h1>
-             <h1>Gate: </h1>
-              <h1>Bestemming: </h1>
-               <h1>Vliegtuig: </h1>
-       </div>
-   </div>
-   <div class="container">
-    <div class="containerreizen">
-         <h1>Voornaam :<?php echo $product['voornaam'];?></h1>
-            <h1>Achternaam :<?php echo $product['achternaam'];?></h1>
-             <h1>Duur :<?php echo $product['duur'];?></h1>
-              <h1>Personen :<?php echo $product['personen'];?></h1>
-               <h1>vliegveld :<?php echo $product['vliegveld'];?></h1>
-               <h1>bestemming :<?php echo $product['bestemming'];?></h1>
-    </div>
-   </div>
 </body>
 </html>
 </body>
