@@ -52,30 +52,66 @@
         </div>
       </div> 
       <!----overlappen stopt---->
-    <!-- </div>
-      <div class="slideshow_main">
-        <div class="fotos">
-          <img src="Image1.jpg">
-          <img src="Image2.jpg">
-          <img scr="Image3.jpg">
-          <img scr="Image4.jpg">
-        </div>
-      </div>
+    </div>
+      <!-- <div class="slideshow_main">
+        <div class="fotos"> -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="igv/img/Image1.jpg" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="igv/img/Image2.jpg" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="igv/img/Image3.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="igv/img/Image4.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+        <!-- </div>
+      </div>  -->
     <?php
     include("includes/footer.php")
     ?>
   </body>
-</html>
-<script>
+</html> <!---
+<script> 
   var i = 0;
   var image = [];
   var time = 3000;
 
   //img list
-  image[0] = 'Image1.jpg';
-  image[1] = 'Image2.jpg';
-  image[2] = 'Image3.jpg';
-  image[3] = 'Image4.jpg';
+  image[0] = 'igv/img/Image1.jpg';
+  image[1] = 'igv/img/Image2.jpg';
+  image[2] = 'igv/img/Image3.jpg';
+  image[3] = 'igv/img/Image4.jpg';
 
   //function
   function changeImg() {
@@ -91,8 +127,39 @@
 
   }
 
-  window.onload = changeImg
+  window.onload = changeImg 
 
-</script> -->
+</script> 
+--->
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
 <!---- kleur: F1F1F1 (white), 23A99B, 5DC6EC, FF6600, FFFF28 ----->
