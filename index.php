@@ -41,8 +41,13 @@
             </div>
           </form>
         <div class="achtergrond-searchbar">
-          <div class="something">
-            <img class="something" src="igv/img/Lion-logo.webp">
+         <div class="infoblok">
+          <a href="boeken.php"><img src="igv/img/pexels-jess-loiterton-5232332.jpg" alt=""></a>
+          </div>
+      <div class="infoblok">
+        <a href="schema.php"><img src="igv/img/pexels-andrea-piacquadio-845451.jpg" alt=""></a>
+        </div>
+            
           </div>
         </div>
       </div> 

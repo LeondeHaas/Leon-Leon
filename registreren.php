@@ -30,8 +30,7 @@
             <input
               type="text"
               name="gebruikersnaam"
-              placeholder="Enter the User Name"
-            />
+              placeholder="Enter the User Name"/>
           </div>
           <div class="form-input">
               <input type="text" name="achternaam" placeholder="achternaam" />

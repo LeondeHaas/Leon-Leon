@@ -96,25 +96,40 @@ h3 {
 /* informatie blokken er overheen*/
 .overlappen {
   z-index: 1;
-  width: 30%;
-  height: 30%;
 }
 
 .achtergrond-searchbar {
-  background-color: #23a99cc5;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
+  background-color: #23a99c;
+  width: 800px;
+  height: 400px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
-.something {
-  z-index: 3;
-  height: 100px;
-  width: 100px;
+.infoblok {
+  width: 350px;
+  height: 350px;
+  background-color: red;
+  transition: 1s;
 }
+
+.infoblok img {
+  width: 100%;
+  height: 100%;
+}
+
+.infoblok:hover {
+  box-shadow: 5px 5px 5px 5px black;
+  transition: 1s;
+  width: 400px;
+  height: 400px;
+}
+
+.infoblok img h1 {
+  z-index: 1000;
+}
+
 
 .img {
   width: 100px;
@@ -143,7 +158,7 @@ h3 {
   background-color: #ff6600dd;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 800px;
   height: 40px;
   padding: 1%;
 }
@@ -186,5 +201,14 @@ h3 {
     flex-wrap: wrap;
     text-align: center;
     margin-left: auto;
+  }
+
+  .infoblok img {
+    display: none;
+  }
+
+  .infoblok {
+
+    display: none;
   }
 }
