@@ -21,11 +21,21 @@
           <button class="delete"><h1>Delete</h1></button>
            <a href="https://trello.com/b/pLMXKTJs/crudproject"><button class="trello"><h1>Trello</h1></button></a>
     </div>
+<?php 
+        include_once('../Includes/connecter.php');
+
+        $query = "SELECT id, land, beschrijving, kosten FROM bestemmingen ";
+        $stmt = $connect->prepare($query);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+
+        foreach($result as $product) {
+?>
    <div class="container">
        <div class="containerboeken">
-           <h1>Amerika</h1>
-            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quasi consectetur doloribus repudiandae fugit facere ducimus cumque, distinctio, at dolor exercitationem adipisci excepturi incidunt rerum! Labore eos dolorem harum vitae!</h2>
-             <h2>$499</h2>
+           <h1><?php echo $product['land'];?></h1>
+            <h2><?php echo $product['beschrijving'];?></h2>
+             <h2><?php echo $product['kosten'];?></h2>
        </div>
    </div>
    <div class="container1">
@@ -47,5 +57,8 @@
                <h1>bestemming :<?php echo $product['bestemming'];?></h1>
     </div>
    </div>
+   <?php
+        }
+?>
 </body>
 </html>

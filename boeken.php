@@ -74,16 +74,22 @@
         </form>
       </div>
     <div class="containerboeken">
+      <?php
+        include_once('Includes/connecter.php');
+
+        $stmt = $connect->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+
+        foreach($result as $product) {
+?>
       <!-- dit is een container boeken       -->
       <div class="bestemming">
         <img class="boekenimg" src="igv/img/tropical island.jpg" alt="" />
         <div class="boekeninfo">
-          <h1 class="land"></h1>
-          <h2>
-            Lorem ipsum doloR sit amet consectetur adipisicing elit. Dicta illo
-            corporis soluta nihil co            Lorem ipsum doloR sit amet consectetur adipisicing elit. Dicta illo
-            corporis soluta nihil consequuntur in aliquid quasi, quo quidem abnsequuntur in aliquid quasi, quo quidem ab
-          </h2>
+          <h1 class="land"><?php echo $product['land'];?></h1>
+          <h2><?php echo $product['beschrijving'];?></h2>
+          <h2><?php echo $product['kosten'];?></h2>
         </div>
         <div class="boekeninfo1">
           <a href="reviews.php">
@@ -92,6 +98,9 @@
         </div>
       </div>
       <!-- dit is een container boeken       -->
+      <?php
+      }
+?>
     </div>
      <?php
     include("includes/footer.php")

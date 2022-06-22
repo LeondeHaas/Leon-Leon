@@ -33,30 +33,24 @@
     </div>
     <div class="create_form_container">
         <div class="create_form_reizen">
-            <form method="POST">
+            <form method="POST" action="create.php">
             <a href="backend.php"><button class="delete"><h1>Ga terug</h1></button></a>
             <label><h3>Vul de gegevens in voor een bestemming</h3></label>
-            <label><h3>Kies een afbeelding </h3></label>
-              <select>
-                <option name="bestemming" value = "" selected>Afbeelding</option>
-                <option name="bestemming" value = "">Afbeelding</option>
-              </select>
-                 <label><h3>Kies een Land </h3></label>
-              <select>
-                <option name="bestemming" value = "" selected>Japan</option>
-                <option name="bestemming" value = "">Amerika</option>
-              </select>
-              <label><h3>Schijf een beschijving </h3></label>
-                <textarea id="message" rows="4"></textarea>
-              <label><h3>Hoeveel kost de rijs? </h3></label>
-               <input type="text" name="personen">
+            <label><h3>Afbeelding</h3></label>
+              <input type="text" name="afbeelding">
+            <label><h3>Land</h3></label>
+              <input type="text" name="land">
+            <label><h3>Schijf een beschijving </h3></label>
+              <textarea id="message" rows="4" name="beschijving"></textarea>
+            <label><h3>Hoeveel kost de rijs? </h3></label>
+               <input type="text" name="kosten">
           <br>
           <br class="hide">
             <input type="submit" value="creëer reis" name="boekenSubmit">
         </form>
         </div>
          <div class="create_form_schema">
-            <form method="POST">
+            <form method="POST" action="create.php">
             <a href="backend.php"><button class="delete"><h1>Ga terug</h1></button></a>
               <label><h3>Vul de gegevens in voor een reis schema</h3></label>
               <label><h3>Vertrek</h3></label>
