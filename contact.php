@@ -34,10 +34,11 @@
               </div>
               <div class="right">
                   <h2>Contact Us</h2>
-                  <form method='post' action='includes/contact.php'>
-                    <input type="text" class="field" placeholder="Your Name" name='name'>
-                    <input type="email" class="field" placeholder="Your Email"  name='email'>
+                  <form methode="GET" action='includes/contact.php' id="form">
+                    <input type="text" class="field" placeholder="Your Name" name='name' id="name" required>
+                    <input type="email" class="field" placeholder="Your Email"  name='email' required>
                     <input type="phone" class="field" placeholder="Phone" name='phone'>
+                    <input type="password" class="field" placeholder="Password" name='password' id="password" required>
                     <textarea placeholder="Message" class="field" name='message'></textarea>
                     <button class="btn" name='submit'>Send</button>
                   </form> 
@@ -50,5 +51,32 @@
       ?>    
   </body>
 </html>
+
+<script>
+  const name = document.GetElementById('name')
+  const password = document.GetElementById('password')
+  const form = document.GetElementById('form')
+  const errorElement = document.GetElementById('error')
+
+  form.addEventListener('submit', (e) => {
+    let messages = [] 
+    if (name.value === '' || name.value == null ) {
+      allert('name is required');
+    }
+    if (password.value === '' || password.value == null ) {
+      allert('name is required');
+    }
+    if (email.value === '' || email.value == null ) {
+      allert('name is required');
+    }
+
+
+    if (messages.lenght < 0) {
+      e.preventDefault()
+      errorElement.innerText = messages.join(', ')
+    }
+  })
+  
+</script>
 
 <!---- kleur: F1F1F1 (white), 23A99B, 5DC6EC, FF6600, FFFF28 ----->

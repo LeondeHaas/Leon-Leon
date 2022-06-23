@@ -21,9 +21,10 @@
     <div class="hidden"></div>
       <div class="searchbar_space">
         <div class="overlappen"> 
-            <?php
+          <?php
               if (!empty($_POST)){
               $search = $_POST['search'];
+
               $sql = "SELECT * FROM bestemmingen WHERE land LIKE '%". $search. "%'";
               } else {
                 $sql = "SELECT * FROM bestemmingen ORDER BY land DESC";
@@ -35,6 +36,40 @@
             </div>
           </form>
         </div> 
+        <div class="timer">
+  <p id="demo"></p>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+  </div>
+  <div class="deals"><h3>na dat deze timer is afgelopen zijn de deals voorbij.</h3></div>
       </div>
       <div class="boeken_keuze">
          <img class="hover" src="igv/img/001-open-book.png" alt="">
@@ -98,6 +133,28 @@
         </div>
       </div>
       <!-- dit is een container boeken       -->
+      <button onclick="topFunction()" class="back_to_top" type="button"><h1>&#8593;</h1></button>
+      <script>
+        //Get the button:
+        mybutton = document.getElementById("back_to_top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+      </script>
       <?php
       }
 ?>

@@ -13,14 +13,14 @@
       rel="stylesheet" 
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>rating system</title>
+    <title>revieuws</title>
 </head>
     <?php
     include("includes/header.php")
     ?>
 <body>
     <div class="header-space"></div> 
-    
+
     <!-- <div class="star-rating-around">
         <div id="1" class="stars">  </div>
         <div id="2" class="stars"> &#9734; </div>
@@ -68,12 +68,12 @@
         }
     </script> -->
 
-    <h2>Star Rating</h2>
-    <span class="fa fa-star "></span>
-    <span class="fa fa-star "></span>
-    <span class="fa fa-star "></span>
-    <span class="fa fa-star "></span>
-    <span class="fa fa-star "></span>
-
-</body>
-</html>
+    <div class="background">
+        <div class="revieuw-border">
+            <div class="placement-myr">
+            <button class="make-your-revieuw" type="button">Revieuw maken</button>
+            </div>
+            <div class="revieuws">        
+        </div>
+        </div>
+    </div>

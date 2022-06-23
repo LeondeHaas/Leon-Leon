@@ -130,7 +130,6 @@ h3 {
   z-index: 1000;
 }
 
-
 .img {
   width: 100px;
   height: 100px;
@@ -164,26 +163,126 @@ h3 {
 }
 
 /* javascript slide show */
-.slideshow_main {
+
+* {
+  box-sizing: border-box;
+}
+
+.show-tainer {
   width: 100%;
-  height: 100vh;
-  background-color: #f1f1f1;
-  border-top: solid 3px black;
-  border-bottom: solid 3px black;
+  height: 800px;
+  background-color: #23a99c;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.onderstaan {
+  width: 100%;
+  height: 20px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #23a99c;
 }
 
-.fotos {
-  width: 90%;
-  height: 90%;
-  border: solid 5px #5dc6ec;
-  background-color: #23a99cab;
-  z-index: 1;
+.active,
+.dot:hover {
+  background-color: #717171;
 }
 
-@media only screen and (max-width: 400px) {
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
   .header {
     height: 210px;
   }
@@ -208,7 +307,6 @@ h3 {
   }
 
   .infoblok {
-
     display: none;
   }
 }
