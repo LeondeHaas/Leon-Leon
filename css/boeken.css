@@ -75,7 +75,6 @@ body {
   margin-top: 175px;
 }
 
-
 .boeken_keuze:hover {
   width: 350px;
   height: 80%;
@@ -111,7 +110,8 @@ body {
   display: none;
 }
 
-.boeken_keuze input, select {
+.boeken_keuze input,
+select {
   width: 250px;
   height: 35px;
   font-size: 15px;
@@ -136,21 +136,6 @@ body {
   transition: 1s;
 }
 
-/* .txt {
-  display: none;
-}
-
-.txt:hover {
-  display: block;
-
-} */
-
-/* 
-select {
-  width: 150px;
-  height: 35px;
-} */
-
 .containerboeken {
   width: 100%;
   height: auto;
@@ -173,11 +158,6 @@ select {
   width: 100%;
   height: 100%;
 }
-
-/* .img {
-  width: 100%;
-  height: 250px;
-} */
 
 .boekeninfo {
   width: 100%;
@@ -305,6 +285,26 @@ h2 {
   margin-bottom: 20px;
 }
 
+.timer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff6600dd;
+  font-size: 30px;
+}
+
+.deals {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1c7;
+  font-size: 15px;
+}
+
 @media only screen and (max-width: 400px) {
   .bestemming {
     width: 90%;
@@ -400,4 +400,3 @@ h2 {
     height: 30px;
   }
 }
-
