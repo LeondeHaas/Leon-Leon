@@ -4,8 +4,6 @@ if (isset($_POST['boekenSubmit']))
 
     $sql = "INSERT INTO reizen (voornaam, achternaam, duur, personen, vliegveld, bestemming) VALUES (:voornaam, :achternaam, :duur, :personen, :vliegveld, :bestemming)";
     
-    $hashedPassword = password_hash($_POST['wachtwoord'], PASSWORD_DEFAULT);
-
     $stmt = $connect->prepare($sql);
     $stmt->bindParam(':voornaam', $_POST['voornaam']);
     $stmt->bindParam(':achternaam', $_POST['achternaam']);
@@ -14,4 +12,4 @@ if (isset($_POST['boekenSubmit']))
     $stmt->bindParam(':vliegveld', $_POST['vliegveld']);
     $stmt->bindParam(':bestemming', $_POST['bestemming']);
     $stmt->execute();
-    header('Location: ../contact.php');
+    header('Location: ../boeken.php');
