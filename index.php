@@ -101,33 +101,7 @@
     include("includes/footer.php")
     ?>
   </body>
-</html> <!---
-<script> 
-  var i = 0;
-  var image = [];
-  var time = 3000;
-
-  //img list
-  image[0] = 'igv/img/Image1.jpg';
-  image[1] = 'igv/img/Image2.jpg';
-  image[2] = 'igv/img/Image3.jpg';
-  image[3] = 'igv/img/Image4.jpg';
-
-  //function
-  function changeImg() {
-    document.slide.scr = image[i];
-
-    if(i < image.lenght - 1) {
-      i++;
-    } else {
-      i = 0;
-    }
-
-    setTimeout("changeImg()", time);
-
-  }
-
-  window.onload = changeImg 
+</html>
 
 </script> 
 --->
