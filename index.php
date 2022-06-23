@@ -53,8 +53,7 @@
       </div> 
       <!----overlappen stopt---->
     </div>
-      <!-- <div class="slideshow_main">
-        <div class="fotos"> -->
+          <div class="show-tainer">
         <div class="slideshow-container">
 
           <!-- Full-width images with number and caption text -->
@@ -87,16 +86,17 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <br>
-
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <!-- The dots/circles -->
+        <div class="onderstaan">
+              <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
           </div>
-        <!-- </div>
-      </div>  -->
+      </div>
     <?php
     include("includes/footer.php")
     ?>
