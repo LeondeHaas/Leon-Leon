@@ -305,7 +305,23 @@ h2 {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 400px) {
+.back_to_top {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffd900;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10000000000000000;
+  border: black solid 3px;
+}
+
+.back_to_top :hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 1100) {
   .bestemming {
     width: 90%;
     height: auto;
