@@ -11,6 +11,6 @@ if(isset($_POST['verwijderen'])){
     $stmt->bindparam(':id', $id);
     $stmt->execute();
 
-    header('location:../backend.php');
+    header('location:backend.php');
     exit();
 } ?> 

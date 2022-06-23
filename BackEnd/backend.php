@@ -19,57 +19,78 @@
         <a href="createform.php"><button class="create"><h1>Create</h1></button></a>
            <a href="https://trello.com/b/pLMXKTJs/crudproject"><button class="trello"><h1>Trello</h1></button></a>
     </div>
-<?php 
-        include_once('../Includes/connecter.php');
-
-        $query = "SELECT id, land, beschrijving, kosten FROM bestemmingen ";
-        $stmt = $connect->prepare($query);
-        $stmt->execute();
-        $result = $stmt->fetchAll();
-
-        foreach($result as $product) {
-?>
+    
    <div class="container">
-<table>
-    <tr>
-        <th>Land</th>
-        <th>beschrijving</th>
-        <th>kosten</th>
-    </tr>
-    <tr>
-        <td><h1><?php echo $product['land'];?></h1></td>
-        <td><p><?php echo $product['beschrijving'];?></p></td>
-        <td><h2><?php echo $product['kosten'];?></h2></td>
-    </tr>
-       <button class="update"><h1>Update</h1></button>
-        <form method="POST" action="remove.php">
-         <input name="id" value="<?php echo $product['id']; ?>"type="hidden" readonly>
-         <input type="submit" name="verwijderen" value="Delete" class="delete">
-        </form>
-        <table>
-<table>          
-   </div>
-   <!-- <div class="container1">
-       <div class="containerschema">
-           <h1>Vertrek: </h1>
-            <h1>Aankomst: </h1>
-             <h1>Gate: </h1>
-              <h1>Bestemming: </h1>
-               <h1>Vliegtuig: </h1>
-       </div>
-   </div>
-   <div class="container">
-    <div class="containerreizen">
-         <h1>Voornaam :<?php echo $product['voornaam'];?></h1>
-            <h1>Achternaam :<?php echo $product['achternaam'];?></h1>
-             <h1>Duur :<?php echo $product['duur'];?></h1>
-              <h1>Personen :<?php echo $product['personen'];?></h1>
-               <h1>vliegveld :<?php echo $product['vliegveld'];?></h1>
-               <h1>bestemming :<?php echo $product['bestemming'];?></h1>
-    </div>
-   </div> -->
+     <div class="bestemming">
+            <table>
+                <tr>
+                    <th>Land</th>
+                    <th>beschrijving</th>
+                    <th>kosten</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>             
+                <?php 
+                        include_once('../Includes/connecter.php');
+
+                        $query = "SELECT id, land, beschrijving, kosten FROM bestemmingen ";
+                        $stmt = $connect->prepare($query);
+                        $stmt->execute();
+                        $result = $stmt->fetchAll();
+
+                        foreach($result as $product) {
+                ?>
+                <tr>
+                    <td><h1><?php echo $product['land'];?></h1></td>
+                    <td><p><?php echo $product['beschrijving'];?></p></td>
+                    <td><h2>$<?php echo $product['kosten'];?></h2></td>
+                    <td><a href="update.php?id=<?php echo $product['id'];?>">
+                    <button class="update">Update</button></a><td>            
+                    <form method="POST" action="remove.php">
+                    <input name="id" value="<?php echo $product['id']; ?>"type="hidden" readonly>
+                    <input type="submit" name="verwijderen" value="Delete" class="delete">
+                    </form>
+                </tr>              
    <?php
         }
 ?>
+                <tr>
+                    <th>voornaam</th>
+                    <th>achternaam</th>
+                    <th>duur</th>
+                    <th>personen</th>
+                    <th>vliegveld</th>
+                    <th>bestemming</th>
+                </tr>
+                  <?php 
+                        include_once('../Includes/connecter.php');
+
+                        $query = "SELECT id, land, beschrijving, kosten FROM bestemmingen ";
+                        $stmt = $connect->prepare($query);
+                        $stmt->execute();
+                        $result = $stmt->fetchAll();
+
+                        foreach($result as $product) {
+                ?>
+                <tr>
+                    <td><h1>Voornaam :<?php echo $product['voornaam'];?></h1></td>
+                    <td><h1>Achternaam :<?php echo $product['achternaam'];?></h1></td>
+                    <td><h1>Duur :<?php echo $product['duur'];?></h1></td>
+                    <td><h1>Personen :<?php echo $product['personen'];?></h1></td>
+                    <td>h1>vliegveld :<?php echo $product['vliegveld'];?></h1></td><
+                    <td><h1>bestemming :<?php echo $product['bestemming'];?></h1></td>
+                    <td><a href="update.php?id=<?php echo $product['id'];?>">
+                    <button class="update">Update</button></a><td>            
+                    <form method="POST" action="remove.php">
+                    <input name="id" value="<?php echo $product['id']; ?>"type="hidden" readonly>
+                    <input type="submit" name="verwijderen" value="Delete" class="delete">
+                    </form>
+                </tr>              
+   <?php
+        }
+?>       
+            </table>
+        </div>   
+   </div>
 </body>
 </html>

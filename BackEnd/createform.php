@@ -28,7 +28,7 @@
     <div class="create_form_container">
         <div class="create_form_reizen">
             <form method="POST" action="create.php">
-            <a href="backend.php"><button class="delete"><h1>Ga terug</h1></button></a>
+            <a href="../backend.php"><button class="delete"><h1>Ga terug</h1></button></a>
             <label><h3>Vul de gegevens in voor een bestemming</h3></label>
             <label><h3>Afbeelding</h3></label>
               <input type="text" name="afbeelding">

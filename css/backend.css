@@ -38,17 +38,16 @@
 
 .update {
   background-color: blue;
-  width: 200px;
-  height: 75px;
-  margin-top: 10px;
+  width: 80%;
+  height: 50px;
+  font-size: 25px;
 }
 
 .delete {
   background-color: red;
-  width: 200px;
-  height: 75px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 80%;
+  height: 50px;
+  font-size: 25px;
 }
 
 .trello {
@@ -131,23 +130,28 @@
   align-items: center;
 }
 
-.containerreizen {
-  width: auto;
-  height: 175px;
-  background-color: #5dc6ec;
-  font-size: 10px;
-  text-align: center;
-}
 
 .container {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  background-color: grey;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.bestemming {
+  width: 100%;
+  height: auto;
+}
+
+.boeken {
+  background-color: red;
+  width: 100%;
+  height: 100px;
+}
+
+.container input {
+  font-size: 25px;
 }
 
 .container1 {
@@ -176,7 +180,7 @@
 
 .containerschema {
   width: 300px;
-  height: auto;
+  height: 200px;
   background-color: #5dc6ec;
   margin-top: 10px;
   font-size: 10px;
@@ -220,6 +224,7 @@
   
 }
 
+
 .create_form select {
   width: 200px;
   height: 30px;
@@ -233,14 +238,20 @@
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
+  vertical-align: inherit;
+  table-layout: fixed;
   width: 100%;
 }
 
+
 td, th {
   border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+  text-align: center;
+  word-wrap: break-word;
+  /* flex-wrap: wrap; */
 }
+
+
 
 tr:nth-child(even) {
   background-color: #dddddd;
