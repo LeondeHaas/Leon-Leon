@@ -52,7 +52,7 @@
   </body>
 </html>
 
-<script>
+<!-- <script>
   const name = document.GetElementById('name')
   const password = document.GetElementById('password')
   const form = document.GetElementById('form')
@@ -77,6 +77,6 @@
     }
   })
   
-</script>
+</script> -->
 
 <!---- kleur: F1F1F1 (white), 23A99B, 5DC6EC, FF6600, FFFF28 ----->

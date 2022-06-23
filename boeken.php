@@ -40,7 +40,7 @@
   <p id="demo"></p>
     <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+      var countDownDate = new Date("Jun 27, 2022 13:00:00").getTime();
 
       // Update the count down every 1 second
       var x = setInterval(function() {
@@ -124,7 +124,7 @@
         <div class="boekeninfo">
           <h1 class="land"><?php echo $product['land'];?></h1>
           <h2><?php echo $product['beschrijving'];?></h2>
-          <h2><?php echo $product['kosten'];?></h2>
+          <h2>Kosten : $<?php echo $product['kosten'];?></h2>
         </div>
         <div class="boekeninfo1">
           <a href="reviews.php">
