@@ -27,11 +27,8 @@
 
               $sql = "SELECT * FROM bestemmingen WHERE land LIKE '%". $search. "%'";
               } else {
-<<<<<<< HEAD
-                $sql = "SELECT * FROM bestemmingen ORDER BY ACS DESC";
-=======
                 $sql = "SELECT * FROM bestemmingen ORDER BY land DESC";
->>>>>>> a7a0f312ec42896119940a14d83cda2190665165
+
               }
             ?>
           <form action="bestellen.php" method="POST">
@@ -75,7 +72,7 @@
   </div>
   <div class="deals"><h3>na dat deze timer is afgelopen zijn de deals voorbij.</h3></div>
       </div>
-        <div class="revieuw-border"><a href="revieuw.php"><h3>revieuws over ons</h3></a></div>
+        <div class="revieuw-border"><a href="revieuw.php"><h3>maak hier uw revieuw over ons</h3></a></div>
       <div class="boeken_keuze">
          <img class="hover" src="igv/img/001-open-book.png" alt="">
         <form action="inludes/reizen.php" method="POST">
