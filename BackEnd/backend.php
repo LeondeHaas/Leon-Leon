@@ -61,11 +61,13 @@
                     <th>personen</th>
                     <th>vliegveld</th>
                     <th>bestemming</th>
+                    <th>update</th>
+                    <th>delete</th>
                 </tr>
                   <?php 
                         include_once('../Includes/connecter.php');
 
-                        $query = "SELECT id, land, beschrijving, kosten FROM bestemmingen ";
+                        $query = "SELECT id, voornaam, achternaam, duur, personen, vliegveld, bestemming FROM reizen";
                         $stmt = $connect->prepare($query);
                         $stmt->execute();
                         $result = $stmt->fetchAll();
@@ -73,12 +75,12 @@
                         foreach($result as $product) {
                 ?>
                 <tr>
-                    <td><h1>Voornaam :<?php echo $product['voornaam'];?></h1></td>
-                    <td><h1>Achternaam :<?php echo $product['achternaam'];?></h1></td>
-                    <td><h1>Duur :<?php echo $product['duur'];?></h1></td>
-                    <td><h1>Personen :<?php echo $product['personen'];?></h1></td>
-                    <td>h1>vliegveld :<?php echo $product['vliegveld'];?></h1></td><
-                    <td><h1>bestemming :<?php echo $product['bestemming'];?></h1></td>
+                    <td><?php echo $product['voornaam'];?></td>
+                    <td><?php echo $product['achternaam'];?></td>
+                    <td>Hoeveel dagen weg? <?php echo $product['duur'];?></td>
+                    <td>hoeveel personen? <?php echo $product['personen'];?></td>
+                    <td><?php echo $product['vliegveld'];?></td><
+                    <td><?php echo $product['bestemming'];?></td>
                     <td><a href="update.php?id=<?php echo $product['id'];?>">
                     <button class="update">Update</button></a><td>            
                     <form method="POST" action="remove.php">
@@ -89,6 +91,39 @@
    <?php
         }
 ?>       
+                <tr>
+                    <th>Vertrek</th>
+                    <th>Aankomst</th>
+                    <th>Gate</th>
+                    <th>Bestemming</th>
+                    <th>vliegtuig</th>
+                </tr>
+                  <?php 
+                        include_once('../Includes/connecter.php');
+
+                        $query = "SELECT id, vertrek, aankomst, gate, bestemming, vliegtuig FROM schemareizen ";
+                        $stmt = $connect->prepare($query);
+                        $stmt->execute();
+                        $result = $stmt->fetchAll();
+
+                        foreach($result as $product) {
+                ?>
+                <tr>
+                    <td><?php echo $product['vertrek'];?></td>
+                    <td><?php echo $product['aankomst'];?></td>
+                    <td><?php echo $product['gate'];?></td>
+                    <td><?php echo $product['bestemming'];?></td>
+                    <td><?php echo $product['vliegtuig'];?></td><
+                    <td><a href="update.php?id=<?php echo $product['id'];?>">
+                    <button class="update">Update</button></a><td>            
+                    <form method="POST" action="remove.php">
+                    <input name="id" value="<?php echo $product['id']; ?>"type="hidden" readonly>
+                    <input type="submit" name="verwijderen" value="Delete" class="delete">
+                    </form>
+                </tr>
+        <?php
+    }
+?>                  
             </table>
         </div>   
    </div>

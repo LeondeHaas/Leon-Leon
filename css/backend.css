@@ -193,35 +193,39 @@
 .create_form_reizen {
   width: 400px;
   height: 500px;
-  background-color: #ff6600ea;
+  background-color: #555;
   position: absolute;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   margin-left: 40%;
   justify-content: center;
+  margin-top: 50px;
+  box-shadow: 10px 10px;
 }
 
 .create_form_schema {
   width: 400px;
   height: 500px;
-  background-color: #ff6600ea;
+  background-color: #555;
   margin-right: 40%;
   position: absolute;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
+  margin-top: 50px;
+  box-shadow: 10px 10px;
 }
 
 .create_form_container {
   width: 100%;
-  height: 500px;
+  height: 100%;
   justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   position: absolute;
-  
+  background-image: linear-gradient(black, grey, wheat);
 }
 
 
@@ -233,6 +237,22 @@
 .create_form textarea {
   width: 300px;
   height: 100px;
+}
+
+.create_form_reizen input {
+  width: 90%;
+  height: 35px;
+}
+
+.create_form_reizen textarea {
+  width: 90%;
+  height: 90px;
+  resize: no;
+}
+
+.create_form_schema input {
+   width: 90%;
+  height: 35px;
 }
 
 table {
@@ -256,3 +276,4 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
