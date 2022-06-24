@@ -25,6 +25,7 @@
             <table>
                 <tr>
                     <th>Land</th>
+                    <th>afbeelding</th>
                     <th>beschrijving</th>
                     <th>kosten</th>
                     <th>Update</th>
@@ -33,7 +34,7 @@
                 <?php 
                         include_once('../Includes/connecter.php');
 
-                        $query = "SELECT id, land, beschrijving, kosten FROM bestemmingen ";
+                        $query = "SELECT id, land, afbeelding, beschrijving, kosten FROM bestemmingen ";
                         $stmt = $connect->prepare($query);
                         $stmt->execute();
                         $result = $stmt->fetchAll();
@@ -42,6 +43,7 @@
                 ?>
                 <tr>
                     <td><h1><?php echo $product['land'];?></h1></td>
+                    <td><h3><?php echo $product['afbeelding'];?></h3></td>
                     <td><p><?php echo $product['beschrijving'];?></p></td>
                     <td><h2>$<?php echo $product['kosten'];?></h2></td>
                     <td><a href="update.php?id=<?php echo $product['id'];?>">
@@ -83,7 +85,7 @@
                     <td><?php echo $product['bestemming'];?></td>
                     <td><a href="update.php?id=<?php echo $product['id'];?>">
                     <button class="update">Update</button></a><td>            
-                    <form method="POST" action="remove.php">
+                    <form method="POST" action="remove1.php">
                     <input name="id" value="<?php echo $product['id']; ?>"type="hidden" readonly>
                     <input type="submit" name="verwijderen" value="Delete" class="delete">
                     </form>
@@ -97,6 +99,8 @@
                     <th>Gate</th>
                     <th>Bestemming</th>
                     <th>vliegtuig</th>
+                    <th>update</th>
+                    <th>delete</th>
                 </tr>
                   <?php 
                         include_once('../Includes/connecter.php');
@@ -116,7 +120,7 @@
                     <td><?php echo $product['vliegtuig'];?></td><
                     <td><a href="update.php?id=<?php echo $product['id'];?>">
                     <button class="update">Update</button></a><td>            
-                    <form method="POST" action="remove.php">
+                     <form method="POST" action="remove2.php">
                     <input name="id" value="<?php echo $product['id']; ?>"type="hidden" readonly>
                     <input type="submit" name="verwijderen" value="Delete" class="delete">
                     </form>

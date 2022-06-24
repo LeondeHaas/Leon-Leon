@@ -36,12 +36,12 @@
             <label><h3>Land</h3></label>
               <input type="text" name="land">
             <label><h3>Schijf een beschijving </h3></label>
-              <textarea id="message" rows="4" name="beschijving"></textarea>
+              <textarea type="text" id="message" rows="4" name="beschrijving"></textarea>
             <label><h3>Hoeveel kost de rijs? </h3></label>
                <input type="text" name="kosten">
           <br>
           <br class="hide">
-            <input type="submit" value="creëer reis" name="boekenSubmit">
+            <input type="submit" value="creëer reis" name="insert_bestemming">
         </form>
         </div>
          <div class="create_form_schema">
@@ -61,7 +61,7 @@
                <input type="text" name="personen">
           <br>
           <br class="hide">
-            <input type="submit" value="creëer schema" name="boekenSubmit">
+            <input type="submit" value="creëer schema" name="insert_schema">
 </body>
 </html>
 </body>
