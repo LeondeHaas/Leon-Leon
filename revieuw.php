@@ -1,79 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="css/revieuws.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&family=Macondo&display=swap"
-      rel="stylesheet"
-      rel="stylesheet" 
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>revieuws</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/revieuws.css">
+    <title>Make your rating</title>
 </head>
+<body id="home">
     <?php
-    include("includes/header.php")
+        require_once("includes/header.php");
     ?>
-<body>
-    <div class="header-space"></div> 
-
-    <!-- <div class="star-rating-around">
-        <div id="1" class="stars">  </div>
-        <div id="2" class="stars"> &#9734; </div>
-        <div id="3" class="stars"> &#9734; </div>
-        <div id="4" class="stars"> &#9734; </div>
-        <div id="5" class="stars"> &#9734; </div>
-        <div class="inful-form">
-            <form>
-                <label for="fname">name:</label><br>
-                <input type="text" id="name" name="John">
-                <label for="lname">country/location:</label><br>
-                <input type="text" id="country" name="Japan">
-            </form>
-        </div>
-    </div>
-    <?php
-    include("includes/footer.php")
-    ?>
-
-    <script
-        src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-        crossorigin="anonymous">
-    </script>
-    <script>
-        $(document).ready(function () {
-            ResetStarColors();
-
-            $('.&#9734;').mouseover(function () {
-                ResetStarColors();
-
-                var currentIndex = parseInt($(this).data('id'))
-
-                for (var i=1; i <= currentIndex; i++)
-                    $('.&#9734;:eq('+i+')').css('color', 'yellow');
-            });
-                
-            $('.&#9734;').mouseleave(function () {
-                ResetStarColors();
-            });
-        )};
-
-        function ResetStarColors () {
-            $('.&#9734;').css('color, white');
-        }
-    </script> -->
-
-    <div class="background">
-        <div class="revieuw-border">
-            <div class="placement-myr">
-            <button class="make-your-revieuw" type="button">Revieuw maken</button>
+    <div class="header-space"></div>
+    <main  class="review-page">
+        <h1>Laat een review achter!</h1>
+        <div class="review">
+            <div class="user-rating">
+                <div class="user-review">
+                    <div class="user-img">
+                        <img src="img/rick-raddatz.png" alt="">
+                    </div>
+                    <p><b>Username</b><br> heeft<b> Locatie</b> beoordeeld</p>
+                </div>
+                <div class="star-rating">
+                    <div class="star-rating-stars">
+                        <button class="star">&#9734;</button>
+                        <button class="star">&#9734;</button>
+                        <button class="star">&#9734;</button>
+                        <button class="star">&#9734;</button>
+                        <button class="star">&#9734;</button>
+                    </div>
+                    <p class="current-rating">0 of 5</p>
+                </div>
+                <textarea name="bericht" id="" cols="25" rows="5" placeholder="Uw review."></textarea><br>
+                <select id="rating" name="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br>
+                <button class="submit" type="submit">Verstuur</button>
             </div>
-            <div class="revieuws">        
         </div>
+        <div class="reviews">
+            <h2>Lees hier reviews van onze klanten!</h2>
+            <?php include("includes/reviews_page.php") ?>
         </div>
-    </div>
+    </main>
+    <?php
+        require_once("includes/footer.php");
+    ?>
+    <script src="js/starrating.js"></script>
+    <script src="https://kit.fontawesome.com/460a8e1fd0.js" crossorigin="anonymous"></script>
+</body>
+</html>
