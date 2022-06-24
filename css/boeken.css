@@ -321,6 +321,15 @@ h2 {
   cursor: pointer;
 }
 
+.revieuw-border {
+  width: 100%;
+  height: 50px;
+  background-color: #23a99c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (min-width: 400px) and (max-width: 1100) {
   .bestemming {
     width: 90%;

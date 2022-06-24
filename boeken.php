@@ -26,7 +26,7 @@
               $search = $_POST['search'];
               $sql = "SELECT * FROM bestemmingen WHERE naam LIKE '%". $search. "%'";
               } else {
-                $sql = "SELECT * FROM bestemmingen ORDER BY categorie DESC";
+                $sql = "SELECT * FROM bestemmingen ORDER BY ACS DESC";
               }
             ?>
           <form action="bestellen.php" method="POST">
@@ -70,6 +70,7 @@
   </div>
   <div class="deals"><h3>na dat deze timer is afgelopen zijn de deals voorbij.</h3></div>
       </div>
+        <div class="revieuw-border"><a href="revieuw.php"><h3>revieuws over ons</h3></a></div>
       <div class="boeken_keuze">
          <img class="hover" src="igv/img/001-open-book.png" alt="">
         <form action="inludes/reizen.php" method="POST">
