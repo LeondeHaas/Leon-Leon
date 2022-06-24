@@ -28,7 +28,8 @@
     <div class="create_form_container">
         <div class="create_form_reizen">
             <form method="POST" action="create.php">
-            <a href="../backend.php"><button class="delete"><h1>Ga terug</h1></button></a>
+              <br>
+            <a href="../backend.php"><button><h1>Ga terug</h1></button></a>
             <label><h3>Vul de gegevens in voor een bestemming</h3></label>
             <label><h3>Afbeelding</h3></label>
               <input type="text" name="afbeelding">
@@ -45,7 +46,8 @@
         </div>
          <div class="create_form_schema">
             <form method="POST" action="create.php">
-            <a href="backend.php"><button class="delete"><h1>Ga terug</h1></button></a>
+              <br>
+            <a href="backend.php"><button><h1>Ga terug</h1></button></a>
               <label><h3>Vul de gegevens in voor een reis schema</h3></label>
               <label><h3>Vertrek</h3></label>
                <input type="text" name="personen">

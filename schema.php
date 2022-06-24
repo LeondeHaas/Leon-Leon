@@ -23,6 +23,16 @@
       <video autoplay muted loop>
         <source src="igv/video/production ID_3678380.mp4" type="video/mp4" />
       </video>
+                <  <?php 
+                        include_once('Includes/connecter.php');
+
+                        $query = "SELECT vertrek, aankomst, gate, bestemming, vliegtuig FROM schemareizen ";
+                        $stmt = $connect->prepare($query);
+                        $stmt->execute();
+                        $result = $stmt->fetchAll();
+
+                        foreach($result as $product) {
+                ?>
           <div class="containerschema">
             <table class="schematext">
               <tr>
@@ -33,15 +43,19 @@
                 <th><h2>Vliegtuig<h2></th>
               </tr>
               <tr>
-                <td>18:35</td>
-                <td>20:45</td>
-                <td>A65</td>
-                <td>Amerika</td>
-                <td>De bazaar</td>
+                <td><?php echo $product['vertrek'];?></td>
+                <td><?php echo $product['aankomst'];?></td>
+                <td><?php echo $product['gate'];?></td>
+                <td><?php echo $product['bestemming'];?></td>
+                <td><?php echo $product['vliegtuig'];?></td>
               </tr>
             </table>
           </div>
-        </div>        
+        </div>
+                 <?php
+      }
+?>        
     </div>
+ 
   </body>
 </html>
