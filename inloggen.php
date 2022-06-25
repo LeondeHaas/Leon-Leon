@@ -41,19 +41,6 @@
             name="inlogsubmit"
             class="btn-login"
           />
-
-          <!-- <script
-          function validateForm() {
-            let x = document.forms["myForm"][""].value;
-            if (x == "") {
-              alert("Name must be filled out");
-              return false;
-            }
-          }
-          >
-          </script> -->
-
-
         </form>
         <a href="registreren.php"
           ><button class="register">Registreren</button></a
@@ -63,6 +50,13 @@
     <?php
     include("includes/footer.php")
 ?>
+
+<!-- <form class="login_form" action="../includes/login.php" method="POST" >
+                <h1>Inloggen</h1>
+                <div class="elem-group">
+                    <label for="name">Gebruikersnaam:</label>
+                    <input type="text" id="name" name="naam"  placeholder="Gebruikersnaam" pattern=[A-Z\sa-z]{3,20} required>
+                </div> -->
   </body>
 
   <!---- kleur: F1F1F1 (white), 23A99B, 5DC6EC, FF6600, FFFF28 ----->

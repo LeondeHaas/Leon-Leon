@@ -163,7 +163,7 @@ h3 {
   padding: 5% 10%;
   border-radius: 1.5rem;
   border: 0px solid;
-  background: #ffc53a;
+  background: #ffff28;
   color: #111111;
   font-size: 0.9em;
   font-weight: bold;
@@ -186,7 +186,7 @@ h3 {
   border: none;
   color: #ffc53a;
 }
-.star-rating-stars .star:hover {
+.star-rating-stars .submit .star:hover {
   cursor: pointer;
 }
 .star-rating-stars .full-star,

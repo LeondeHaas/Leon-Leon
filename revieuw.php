@@ -18,7 +18,7 @@
             <div class="user-rating">
                 <div class="user-review">
                     <div class="user-img">
-                        <img src="img/rick-raddatz.png" alt="">
+                        <img src="igv/img/star.png">
                     </div>
                     <p><b>Username</b><br> heeft<b> Locatie</b> beoordeeld</p>
                 </div>
