@@ -1,3 +1,6 @@
+<?php
+  include ("update_id.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +32,6 @@
         <div class="create_form_reizen">
             <form method="POST" action="update_data.php">
               <br>
-            <a href="../backend.php"><button><h1>Ga terug</h1></button></a>
             <label><h3>Update een bestemming</h3></label>
             <label><h3>Afbeelding</h3></label>
               <input type="text" name="afbeelding" value="<?php echo $i['afbeelding']; ?>">
@@ -47,7 +49,6 @@
          <div class="create_form_schema">
             <form method="POST" action="create1.php">
               <br>
-            <a href="backend.php"><button><h1>Ga terug</h1></button></a>
               <label><h3>Update een schema</h3></label>
               <label><h3>Vertrek</h3></label>
                <input type="text" name="vertrek">
