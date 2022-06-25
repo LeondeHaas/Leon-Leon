@@ -45,23 +45,24 @@
         </form>
         </div>
          <div class="create_form_schema">
-            <form method="POST" action="create.php">
+            <form method="POST" action="create1.php">
               <br>
             <a href="backend.php"><button><h1>Ga terug</h1></button></a>
               <label><h3>Vul de gegevens in voor een reis schema</h3></label>
               <label><h3>Vertrek</h3></label>
-               <input type="text" name="personen">
+               <input type="text" name="vertrek">
                <label><h3>Aankomst</h3></label>
-               <input type="text" name="personen">
+               <input type="text" name="aankomst">
                <label><h3>Gate</h3></label>
-               <input type="text" name="personen">
+               <input type="text" name="gate">
                <label><h3>Bestemming</h3></label>
-               <input type="text" name="personen">
+               <input type="text" name="bestemming">
                <label><h3>Vliegtuig</h3></label>
-               <input type="text" name="personen">
+               <input type="text" name="vliegtuig">
           <br>
           <br class="hide">
             <input type="submit" value="creëer schema" name="insert_schema">
+          </form>
 </body>
 </html>
 </body>
