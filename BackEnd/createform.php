@@ -1,6 +1,3 @@
-<?php
-  include ("update_id.php");
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,26 +27,28 @@
     <div class="hidden"></div>
     <div class="create_form_container">
         <div class="create_form_reizen">
-            <form method="POST" action="update_data.php">
+            <form method="POST" action="create.php">
               <br>
-            <label><h3>Update een bestemming</h3></label>
+            <a href="../backend.php"><button><h1>Ga terug</h1></button></a>
+            <label><h3>Vul de gegevens in voor een bestemming</h3></label>
             <label><h3>Afbeelding</h3></label>
-              <input type="text" name="afbeelding" value="<?php echo $i['afbeelding']; ?>">
+              <input type="text" name="afbeelding">
             <label><h3>Land</h3></label>
-              <input type="text" name="land" value="<?php echo $i['land'];?>">
+              <input type="text" name="land">
             <label><h3>Schijf een beschijving </h3></label>
-              <textarea type="text" id="message" rows="4" name="beschrijving" value="<?php echo $i['beschrijving'];?>"></textarea>
+              <textarea type="text" id="message" rows="4" name="beschrijving"></textarea>
             <label><h3>Hoeveel kost de rijs? </h3></label>
-               <input type="text" name="kosten" value="<?php echo $i['kosten'];?>">
+               <input type="text" name="kosten">
           <br>
           <br class="hide">
-            <input type="submit" value="Update reis" name="update">
+            <input type="submit" value="creëer reis" name="insert_bestemming">
         </form>
         </div>
          <div class="create_form_schema">
-            <form method="POST" action="create1.php">
+            <form method="POST" action="create.php">
               <br>
-              <label><h3>Update een schema</h3></label>
+            <a href="backend.php"><button><h1>Ga terug</h1></button></a>
+              <label><h3>Vul de gegevens in voor een reis schema</h3></label>
               <label><h3>Vertrek</h3></label>
                <input type="text" name="vertrek">
                <label><h3>Aankomst</h3></label>
@@ -62,7 +61,7 @@
                <input type="text" name="vliegtuig">
           <br>
           <br class="hide">
-            <input type="submit" value="Update schema" name="update">
+            <input type="submit" value="creëer schema" name="insert_schema">
           </form>
 </body>
 </html>
