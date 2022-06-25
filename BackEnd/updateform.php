@@ -41,7 +41,7 @@
                <input type="text" name="kosten" value="<?php echo $i['kosten'];?>">
           <br>
           <br class="hide">
-            <input type="submit" value="Update reis" name="insert_bestemming">
+            <input type="submit" value="Update reis" name="update">
         </form>
         </div>
          <div class="create_form_schema">
