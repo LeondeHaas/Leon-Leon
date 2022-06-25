@@ -46,7 +46,7 @@
                     <td><h3><?php echo $product['afbeelding'];?></h3></td>
                     <td><p><?php echo $product['beschrijving'];?></p></td>
                     <td><h2>$<?php echo $product['kosten'];?></h2></td>
-                    <td><a href="updateform.php?id=<?php echo $product['id'];?>">
+                    <td><a href="update.php?id=<?php echo $product['id'];?>">
                     <button class="update">Update</button></a><td>            
                     <form method="POST" action="remove.php">
                     <input name="id" value="<?php echo $product['id']; ?>"type="hidden" readonly>
