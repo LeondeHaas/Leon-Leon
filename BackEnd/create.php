@@ -2,18 +2,6 @@
 
 include ('../Includes/connecter.php');
 
-// $sql = "INSERT INTO menu (naam, beschrijving, prijs, categorie)
-// VALUES (:naam,:beschrijving,:prijs,:categorie)";
-// $sql = "INSERT INTO bestemmingen (afbeelding, land, beschrijving, kosten)
-// VALUES (:afbeelding,:land,:beschrijving,:kosten);"
-// if (isset($_POST['insert_bestemming'])){
-//     $stmt->bindParam(":afbeelding", $_POST['afbeelding']);
-//     $stmt->bindParam(":land", $_POST['land']);
-//     $stmt->bindParam(":beschrijving", $_POST['beschrijving']);
-//     $stmt->bindParam(":kosten", $_POST['kosten']);
-//     $stmt = $connect->prepare($sql);
-//     $stmt->execute();
-// }
 if(isset($_POST['insert_bestemming'])){
     $afbeelding     = $_POST['afbeelding'];
     $land           = $_POST['land'];
@@ -24,6 +12,20 @@ if(isset($_POST['insert_bestemming'])){
     header("Location: ../index.php");
     exit();
 }
-// header('Location: ../backend.php');
+
+if(isset($_POST['insert_schema'])){
+    $vertrek        = $_POST['vertrek'];
+    $aankomst       = $_POST['aankomst'];
+    $gate           = $_POST['gate'];
+    $bestemming     = $_POST['bestemming'];
+    $vliegtuig      = $_POST['vliegtuig'];
+    $sql = "INSERT INTO `schemareizen` (`vertrek`, `aankomst`, `gate`, `bestemming`, `vliegtuig`) VALUES ('$vertrek','$aankomst','$gate','$bestemming','$vliegtuig');";
+    $connect->prepare($sql)->execute();
+    header("Location: ../index.php");
+    exit();
+}
+
 
 ?>
+
+
