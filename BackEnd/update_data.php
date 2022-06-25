@@ -9,13 +9,11 @@
         $beschrijving = $_POST['beschrijving']; 
         $kosten = $_POST['kosten']
 
-        $sql = "UPDATE bestemmingen SET afbeelding=?, land=?, beschrijving=?, kosten=? WHERE id=?";
+        $sql = "UPDATE bestemmingen SET afbeelding=?, land=?, beschrijving=?, kosten=? WHERE `bestemmingen`.ID=i";
         $stmt = $connect->prepare($sql);
         $stmt->execute([$afbeelding, $land, $beschrijving, $kosten, $id]);
     }
 
-       
-    header("Location: ../index.php");
-    exit();
-
 ?>
+
+
