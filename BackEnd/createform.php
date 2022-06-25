@@ -45,7 +45,7 @@
         </form>
         </div>
          <div class="create_form_schema">
-            <form method="POST" action="create1.php">
+            <form method="POST" action="create.php">
               <br>
             <a href="backend.php"><button><h1>Ga terug</h1></button></a>
               <label><h3>Vul de gegevens in voor een reis schema</h3></label>
