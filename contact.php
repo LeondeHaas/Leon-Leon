@@ -33,15 +33,15 @@
                 </h1>
               </div>
               <div class="right">
-                  <h2>Contact Us</h2>
-                  <form methode="GET" action='includes/contact.php' id="form">
-                    <input type="text" class="field" placeholder="Your Name" name='name' id="name" required>
-                    <input type="email" class="field" placeholder="Your Email"  name='email' required>
-                    <input type="phone" class="field" placeholder="Phone" name='phone'>
-                    <input type="password" class="field" placeholder="Password" name='password' id="password" required>
-                    <textarea placeholder="Message" class="field" name='message'></textarea>
-                    <button class="btn" name='submit'>Send</button>
-                  </form> 
+                <h2>Contact Us</h2>
+                  <form name="myForm" action="includes/contact.php" onsubmit="return validateForm()" method="post">
+                    <input class="field" type="text" name="name" placeholder="Your full Name">
+                    <input class="field" type="email" name="mail" placeholder="E-mail">
+                    <input class="field" type="password" name="password" placeholder="Password">
+                    <input class="field" type="phone" name="phone" placeholder="Phone number (not required)">
+                    <input class="field" type="text" name="message" placeholder="mesage">
+                    <input class="btn" type="submit" value="Submit">
+                  </form>
               </div>
           </div>
         </div>
@@ -78,5 +78,16 @@
   })
   
 </script> -->
+
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+
+</script>
 
 <!---- kleur: F1F1F1 (white), 23A99B, 5DC6EC, FF6600, FFFF28 ----->
