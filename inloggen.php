@@ -42,9 +42,9 @@
             class="btn-login"
           />
         </form>
-        <a href="registreren.php"
+        <!-- <a href="registreren.php"
           ><button class="register">Registreren</button></a
-        >
+        > -->
       </div>
     </div>
     <?php

@@ -26,13 +26,12 @@
       <div class="informatie-border">
         <div class="overLeonKersten">
             <img class="picturepfp" src="igv/img/LeonK.jfif">
-            <a href="https://github.com/Wolfy4H">Leon Kerstens GitHub</a>
         </div>
         <div class="overLeondeHaas">
             <img class="picturepfp" src="igv/img/LeonH.jfif">
-            <a href="https://github.com/LeondeHaas">Leon de Haas GitHub</a>
         </div>
-        <h1>Deze 2 dappere dodo's hebben de website gemaakt. klink op de tekst onderhun foto voor meer informatie.</h1>
+        <h1>Welkom bij LionFlights</h1>
+        <h3>LionFlights is een multinationale groep die vooral actief is in de toerismesector. De hoofdzetel is gevestigd in Hannover, Nedersaksen, Duitsland. De aandelen van de LionFlights Group staan genoteerd aan de Frankfurter Wertpapierbörse en de London Stock Exchange. Het maakt onderdeel uit van de FTSE 100 aandelenindex.</h3>
       </div>
     </div>
     <div class="border-iow">

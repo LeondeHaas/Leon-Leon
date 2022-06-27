@@ -33,20 +33,20 @@
       <div class="list">
         <h2>Info</h2>
         <ul class="ul">
-          <a href="boeken.php">
-            <li>Favorieten</li>
+         <a href="https://www.tui.nl/corporate/nl/algemene-voorwaarden">
+            <li>Algemene voorwaarden</li>
           </a>
           <a href="schema.php">
-            <li>Vliegtuigen</li>
+            <li>Social Media</li>
           </a>
           <a href="contact.php">
-            <li>Helpdesk</li>
+            <li>Gevonden voorwerpen</li>
           </a>
           <a href="inloggen.php">
-            <li class="ty">Inloggen</li>
+            <li class="ty">reizen</li>
           </a>
           <a href="registreren.php">
-            <li>Registreren</li>
+            <li>Webshop</li>
           </a>
         </ul>
       </div>
