@@ -7,7 +7,7 @@
         $afbeelding = $_POST['afbeelding'];
         $land = $_POST['land'];
         $beschrijving = $_POST['beschrijving']; 
-        $kosten = $_POST['kosten']
+        $kosten = $_POST['kosten'];
 
         $sql = "UPDATE bestemmingen SET afbeelding=?, land=?, beschrijving=?, kosten=? WHERE id=?";
         $stmt = $connect->prepare($sql);

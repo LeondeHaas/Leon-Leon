@@ -129,7 +129,7 @@
           <h2>Kosten : $<?php echo $product['kosten'];?></h2>
         </div>
         <div class="boekeninfo1">
-          <a href="reviews.php">
+          <a href="revieuw.php">
             <button class="boek1"><img class="boek2" src="igv/img/002-satisfaction.png" alt="">Laat een review achter</button>
           </a>
         </div>

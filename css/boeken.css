@@ -217,6 +217,10 @@ select {
   margin-right: auto;
 }
 
+.boekeninfo1 :hover {
+  cursor: pointer;
+}
+
 .pg {
   text-decoration: none;
   transition: 55ms;
