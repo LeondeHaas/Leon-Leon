@@ -30,10 +30,13 @@
           <?php
             if (!empty($_POST)){
             $search = $_POST['search'];
-            $sql = "SELECT * FROM bestemmingen WHERE naam LIKE '%". $search. "%'";
+            $sql = "SELECT * FROM bestemmingen WHERE land LIKE '%". $search. "%'";
             } else {
-              $sql = "SELECT * FROM bestemmingen ORDER BY categorie DESC";
+              $sql = "SELECT * FROM bestemmingen ORDER BY land DESC";
             }
+          ?>
+          <?php
+            include_once("includes/connecter.php");
           ?>
           <form action="bestellen.php" method="POST">
             <div class="search_bar">

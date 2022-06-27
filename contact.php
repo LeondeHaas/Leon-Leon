@@ -37,7 +37,6 @@
                   <form name="myForm" action="includes/contact.php" onsubmit="return validateForm()" method="post">
                     <input class="field" type="text" name="name" placeholder="Your full Name">
                     <input class="field" type="email" name="mail" placeholder="E-mail">
-                    <input class="field" type="password" name="password" placeholder="Password">
                     <input class="field" type="phone" name="phone" placeholder="Phone number (not required)">
                     <input class="field" type="text" name="message" placeholder="mesage">
                     <input class="btn" type="submit" value="Submit">
@@ -70,7 +69,6 @@
       allert('name is required');
     }
 
-
     if (messages.lenght < 0) {
       e.preventDefault()
       errorElement.innerText = messages.join(', ')
@@ -81,9 +79,9 @@
 
 <script>
 function validateForm() {
-  let x = document.forms["myForm"]["name"].value;
+  let x = document.forms["myForm"]["message"].value;
   if (x == "") {
-    alert("Name must be filled out");
+    alert("message must be filled out");
     return false;
   }
 }
