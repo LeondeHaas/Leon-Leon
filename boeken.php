@@ -106,14 +106,14 @@
       </div>
     <div class="containerboeken">
       <?php
-        include_once('Includes/connecter.php');
+          include_once('Includes/connecter.php');
 
-        $stmt = $connect->prepare($sql);
-        $stmt->execute();
-        $result = $stmt->fetchAll();
+          $stmt = $connect->prepare($sql);
+          $stmt->execute();
+          $result = $stmt->fetchAll();
 
-        foreach($result as $product) {
-?>
+          foreach($result as $product) {
+        ?>
       <!-- dit is een container boeken       -->
       <div class="bestemming">
         <img class="boekenimg" src="<?php echo $product['afbeelding'];?>" alt="" />
@@ -152,11 +152,11 @@
         }
       </script>
       <?php
-      }
-?>
+        }
+      ?>
     </div>
-     <?php
-    include("includes/footer.php")
+    <?php
+      include("includes/footer.php")
     ?>
   </body>
 </html>
