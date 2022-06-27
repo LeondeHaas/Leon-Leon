@@ -14,7 +14,7 @@ $results = $stmt->fetchAll();
             <div class="user-rating">
             <div class="user-review">
             <div class="user-img">
-                       <img src="img/rick-raddatz.png" alt="">
+                       <img src="igv/img/star.png" alt="">
                     </div>
                     <p><b><?php echo $result['naam']; ?></b><br> heeft<b> <?php echo $result['bestemming']; ?></b> beoordeeld</p>
                 </div>

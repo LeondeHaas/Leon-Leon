@@ -186,7 +186,7 @@ h3 {
   border: none;
   color: #ffc53a;
 }
-.star-rating-stars .submit .star:hover {
+.star-rating-stars .star:hover .submit:hover {
   cursor: pointer;
 }
 .star-rating-stars .full-star,
@@ -206,6 +206,25 @@ h3 {
 }
 .reviews h1 {
   text-align: center;
+}
+
+.field {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.field:hover {
+  background-color: #5dc6eca1;
+}
+
+.insert_review :hover {
+  cursor: pointer;
 }
 
 /* media query's*/
