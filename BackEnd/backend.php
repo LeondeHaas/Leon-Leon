@@ -83,7 +83,7 @@
                     <td>hoeveel personen? <?php echo $product['personen'];?></td>
                     <td><?php echo $product['vliegveld'];?></td><
                     <td><?php echo $product['bestemming'];?></td>
-                    <td><a href="update.php?id=<?php echo $product['id'];?>">
+                    <td><a href="updateform.php?id=<?php echo $product['id'];?>">
                     <button class="update">Update</button></a><td>            
                     <form method="POST" action="remove1.php">
                     <input name="id" value="<?php echo $product['id']; ?>"type="hidden" readonly>

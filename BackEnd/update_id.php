@@ -9,4 +9,5 @@ include ('../Includes/connecter.php');
     $stmt -> bindParam(":id", $_GET['id']);
     $stmt -> execute();
     $i = $stmt -> fetch();
+    
 ?>

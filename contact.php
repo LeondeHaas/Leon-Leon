@@ -28,18 +28,16 @@
         <div class="container">
           <div class="contact-box">
               <div class="left">
-                <h1>
-                  Hallo, <br> <br> waarmee kunnen wij u <br> helpen?
-                </h1>
+               <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Schiphol&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:400px;}</style><a href="https://www.embedgooglemap.net">google maps generator</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:400px;margin-top:50px;border-radius:50px;}</style></div></div>
               </div>
               <div class="right">
                 <h2>Contact Us</h2>
-                  <form name="myForm" action="includes/contact.php" onsubmit="return validateForm()" method="post">
+                  <form name="myForm" action="includes/contacts.php" onsubmit="return validateForm()" method="post">
                     <input class="field" type="text" name="name" placeholder="Your full Name">
-                    <input class="field" type="email" name="mail" placeholder="E-mail">
+                    <input class="field" type="email" name="email" placeholder="E-mail">
                     <input class="field" type="phone" name="phone" placeholder="Phone number (not required)">
                     <input class="field" type="text" name="message" placeholder="mesage">
-                    <input class="btn" type="submit" value="Submit">
+                    <input class="btn" type="submit" value="Submit" name="contactSubmit">
                   </form>
               </div>
           </div>

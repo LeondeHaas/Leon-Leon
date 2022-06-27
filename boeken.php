@@ -75,7 +75,7 @@
         <div class="revieuw-border"><a href="revieuw.php"><h3>maak hier uw revieuw over ons</h3></a></div>
       <div class="boeken_keuze">
          <img class="hover" src="igv/img/001-open-book.png" alt="">
-        <form action="inludes/reizen.php" method="POST">
+        <form action="includes/boekreizen.php" method="POST">
             <h1>Boek uw vlucht</h1>
             <br>
             <label><h3>Voornaam:</h3></label>
@@ -91,23 +91,17 @@
             <input type="number" name="personen">
             <br>
             <label><h3>Vanaf welk vliegveld vertrekt U?</h3></label>
-                <select>
+                <select name="vliegveld">
                   <option name="vliegveld" value = "Amsterdam Airport" selected>Amsterdam Airport</option>
                   <option name="vliegveld" value = "Eindhoven Airport">Eindhoven Airport</option>
                   <option name="vliegveld" value = "Teuge Airport">Teuge Airport</option>
                 </select>
             <br>
             <label><h3>Waar gaat u naartoe?</h3></label>
-              <select>
-                <option name="bestemming" value = "" selected>Amerika</option>
-                <option name="bestemming" value = "">Nederland</option>
-                <option name="bestemming" value = "">Korea</option>
-                <option name="bestemming" value = "">Engeland</option>
-                <option name="bestemming" value = "">Japan</option>
-              </select>
+              <input type="text" name="bestemming">
           <br>
           <br class="hide">
-            <input type="submit" value="Submit" name="boekenSubmit">
+            <input type="submit" value="Boek uw vlucht" name="boekenSubmit">
         </form>
       </div>
     <div class="containerboeken">
@@ -122,7 +116,7 @@
 ?>
       <!-- dit is een container boeken       -->
       <div class="bestemming">
-        <img class="boekenimg" src="igv/img/tropical island.jpg" alt="" />
+        <img class="boekenimg" src="<?php echo $product['afbeelding'];?>" alt="" />
         <div class="boekeninfo">
           <h1 class="land"><?php echo $product['land'];?></h1>
           <h2><?php echo $product['beschrijving'];?></h2>
