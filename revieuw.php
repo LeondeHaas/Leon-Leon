@@ -15,50 +15,57 @@
     <div class="header-space"></div>
     <main class="review-page">
       <h1>Laat een review achter!</h1>
-      <div class="review">
-        <div class="user-rating">
-          <div class="user-review">
-            <p>
-            <input class="field" type="text" name="name" placeholder="Your full Name">
-            <input class="field" type="text" bestemming="name" placeholder="Bestemming beoordelen">
-            </p>
-          </div>
-          <div class="star-rating">
-            <div class="star-rating-stars">
-              <button class="star">&#9734;</button>
-              <button class="star">&#9734;</button>
-              <button class="star">&#9734;</button>
-              <button class="star">&#9734;</button>
-              <button class="star">&#9734;</button>
+      <form action="includes/review_connect.php" method="POST">
+        <div class="review">
+          <div class="user-rating">
+            <div class="user-review">
+              <p>
+                <input
+                  class="field"
+                  type="text"
+                  name="voornaam"
+                  placeholder="Your full Name"
+                />
+                <input
+                  class="field"
+                  type="text"
+                  name="bestemming"
+                  placeholder="Bestemming beoordelen"
+                />
+              </p>
             </div>
-            <p class="current-rating">0 of 5</p>
-          </div>
-          <textarea
-            name="bericht"
-            id=""
-            cols="25"
-            rows="5"
-            placeholder="Uw review."
-          ></textarea
-          ><br />
-          <!-- form review | verder af makenen zodat goed is -->
-            <form action="includes/review_connect.php" method="POST">
+            <div class="star-rating">
+              <div class="star-rating-stars">
+              </div>
+            </div>
+            <textarea
+              name="message"
+              id=""
+              cols="25"
+              rows="5"
+              placeholder="Uw review."
+            ></textarea
+            ><br />
+            <!-- form review | verder af makenen zodat goed is -->
             <select id="rating" name="rating">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option></select
-            ><br /><br/>
-            <button name="insert_reviews" class="submit" type="submit">Verstuur</button>
-            </form>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option></select
+            ><br /><br />
+            <input type="submit">
+              Verstuur
+            </button>
             <!-- form stopt hier -->
-                
-                <?php 
-                    include("includes/review_connect.php")
-                ?>
+<!-- 
+            <?php 
+                      include("includes/review_connect.php")
+                  ?> -->
+          </div>
         </div>
-      </div>
+      </form>
+
       <div class="reviews">
         <h2>Lees hier reviews van onze klanten!</h2>
         <?php include("includes/reviews_page.php") ?>
