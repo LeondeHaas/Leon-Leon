@@ -13,3 +13,5 @@
 } else {
     header('Location: ../contact.php');
 }
+
+//deze stuctuur is beste en makkelijkste//

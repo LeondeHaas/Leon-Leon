@@ -41,6 +41,7 @@
             placeholder="Uw review."
           ></textarea
           ><br />
+          <!-- form review | verder af makenen zodat goed is -->
             <form action="includes/review_connect.php" method="POST">
             <select id="rating" name="rating">
                 <option value="1">1</option>
@@ -51,6 +52,7 @@
             ><br /><br/>
             <button name="insert_reviews" class="submit" type="submit">Verstuur</button>
             </form>
+            <!-- form stopt hier -->
                 
                 <?php 
                     include("includes/review_connect.php")

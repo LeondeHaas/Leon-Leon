@@ -2,16 +2,16 @@
   var_dump($_POST);
 include ('connecter.php');
 
-if(isset($_POST['insert_reviews'])){
-    $naam = $_POST['naam'];
-    $bericht        = $_POST['bericht'];
-    $rating         = $_POST['rating'];
-    $bestemming     = $_POST['bestemming'];
-    $sql = "INSERT INTO 'reviews' ('naam', 'bericht', 'rating', 'bestemming') VALUES ('$naam','$bericht','$rating','$bestemming');";
-    $connect->prepare($sql)->execute();
-    var_dump($sql);
-    header("Location: ../index.php");
-    exit();
+if(isset($_POST['includes/insert_reviews'])){
+    $sql = "INSERT INTO review (ID, vluchtID, naam, bericht, rating, bestemming) VALUES ($ID, $vluchtID, $naam, $bericht, $rating, $bestemming)";
+    $stmt = $connect->prepare($sql);
+    $stmt->bindParam(':ID', $_POST['ID']);
+    $stmt->bindParam(':vluchtID', $_POST['vluchtID']);
+    $stmt->bindParam(':naam', $_POST['naam']);
+    $stmt->bindParam(':bericht', $_POST['bericht']);
+    $stmt->bindParam(':rating', $_POST['rating']);
+    $stmt->bindParam(':bestemming', $_POST['bestemming']);
+    $stmt->execute();
+    header('Location: boeken.php');
 }
-
 ?>
