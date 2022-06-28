@@ -98,7 +98,9 @@
                 </select>
             <br>
             <label><h3>Waar gaat u naartoe?</h3></label>
-              <input type="text" name="bestemming">
+                 <select>
+                  <option value ="<?php echo $product['land'];?>"></option>
+                </select>
           <br>
           <br class="hide">
             <input type="submit" value="Boek uw vlucht" name="boekenSubmit">
