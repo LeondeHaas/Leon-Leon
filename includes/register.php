@@ -1,6 +1,5 @@
 <?php
 if (isset($_POST['registrerenSubmit'])) {
-
     require_once("../includes/connecter.php");
 
     $sql = "INSERT INTO accounts (naam, achternaam, wachtwoord, datum, email) VALUES (:naam, :achternaam, :wachtwoord, :datum, :email)";
