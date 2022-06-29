@@ -24,21 +24,35 @@
     <div class="hidden"></div>
       <div class="searchbar_space">
         <div class="overlappen"> 
-          <?php
-              if (!empty($_POST)){
-              $search = $_POST['search'];
-
-              $sql = "SELECT * FROM bestemmingen WHERE land LIKE '%". $search. "%'";
-              } else {
-                $sql = "SELECT * FROM bestemmingen ORDER BY land DESC";
-
-              }
-            ?>
-          <form action="bestellen.php" method="POST">
-            <div class="search_bar">
-              <input name="search" type="text" placeholder="Search.." /> 
-            </div>
-          </form>
+  <form class="nav_form" method="get">
+    <input type="text" placeholder="vind je bestemming" name="search">
+</form>
+</div>
+<div class="journey_main_div" id="journey">
+<?php   
+    if (isset($_GET['search'])){
+    $search = '%'.$_GET['search'].'%';
+    $sql = "SELECT * FROM bestemmingen WHERE land LIKE :search ORDER BY land ASC";
+    $stm = $connect->prepare($sql);
+    $stm->bindParam(":search", $search);
+  } else {
+    $sql = "SELECT * FROM bestemmingen ORDER BY land ASC";
+    $stm = $connect->prepare($sql);
+  }
+    $stm->execute();
+    $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+    foreach($result as $i){
+        echo'      <div class="bestemming">
+        <img class="boekenimg" src="'.$i["afbeelding"].'" alt="" />
+        <div class="boekeninfo">
+          <h1 class="land">'.$i["land"].';</h1>
+          <h2>'.$i["beschrijving"].';</h2>
+          <h2>Kosten : '.$i["kosten"]. ';</h2>
+        </div>';
+      }
+    if(empty($result)){
+      echo "<div class='journey_fill_div'><h1> No results found!</h1><p>Try searching something else?</p></div>";}
+?>
         </div> 
         <div class="timer">
   <p id="demo"></p>
@@ -76,31 +90,6 @@
   <div class="deals"><h3>na dat deze timer is afgelopen zijn de deals voorbij.</h3></div>
       </div>
         <div class="revieuw-border"><a href="revieuw.php"><h3>maak hier uw revieuw over ons</h3></a></div>
-      <!-- <div class="boeken_keuze">
-         <img class="hover" src="igv/img/001-open-book.png" alt=""> -->
-        <!-- <form action="includes/boekreizen.php" method="POST">
-            <h1>Boek uw vlucht</h1>
-            <br>
-            <label><h3>Voornaam:</h3></label>
-            <input name="voornaam" class="trans" type="text">
-            <br>
-            <label><h3>Achternaam:</h3></label>
-            <input type="text" name="achternaam">
-            <br>
-            <label><h3>Hoeveel dagen blijft U weg?</h3></label>
-            <input type="number" name="duur">
-            <br>
-            <label><h3>Hoeveel personen?</h3></label>
-            <input type="number" name="personen">
-            <br>
-            <label><h3>Vanaf welk vliegveld vertrekt U?</h3></label>
-                <select name="vliegveld">
-                  <option name="vliegveld" value = "Amsterdam Airport" selected>Amsterdam Airport</option>
-                  <option name="vliegveld" value = "Eindhoven Airport">Eindhoven Airport</option>
-                  <option name="vliegveld" value = "Teuge Airport">Teuge Airport</option>
-                  <input type="" name="vliegveld"> 
-                </select>
-            <br>
             <label><h3>Waar gaat u naartoe?</h3></label>
                  <select>
                   <option value ="<?php echo $product['land'];?>"></option>
