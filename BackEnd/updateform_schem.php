@@ -29,10 +29,12 @@
 <body>
     <div class="hidden"></div>
     <div class="create_form_container">
-        <div class="create_form_reizen">
+        <!-- <div class="create_form_reizen">
             <form method="POST" action="update_data.php">
               <br>
             <label><h3>Update een bestemming</h3></label>
+            <label><h3>ID</h3></label>
+             <input type="text" name="afbeelding" value="<?php echo $i['ID']; ?>">
             <label><h3>Afbeelding</h3></label>
               <input type="text" name="afbeelding" value="<?php echo $i['afbeelding']; ?>">
             <label><h3>Land</h3></label>
@@ -45,11 +47,13 @@
           <br class="hide">
             <input type="submit" value="Update reis" name="update_bestemming">
         </form>
-        </div>
+        </div> -->
          <div class="create_form_schema">
             <form method="POST" action="update_data.php">
               <br>
               <label><h3>Update een schema</h3></label>
+               <label><h3>ID</h3></label>
+             <input type="text" name="afbeelding" readonly value="<?php echo $i['ID']; ?>" >
               <label><h3>Vertrek</h3></label>
                <input type="text" name="vertrek" value="<?php echo $i['vertrek']; ?>">
                <label><h3>Aankomst</h3></label>
