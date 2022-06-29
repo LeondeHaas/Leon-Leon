@@ -73,9 +73,9 @@
   <div class="deals"><h3>na dat deze timer is afgelopen zijn de deals voorbij.</h3></div>
       </div>
         <div class="revieuw-border"><a href="revieuw.php"><h3>maak hier uw revieuw over ons</h3></a></div>
-      <div class="boeken_keuze">
-         <img class="hover" src="igv/img/001-open-book.png" alt="">
-        <form action="includes/boekreizen.php" method="POST">
+      <!-- <div class="boeken_keuze">
+         <img class="hover" src="igv/img/001-open-book.png" alt=""> -->
+        <!-- <form action="includes/boekreizen.php" method="POST">
             <h1>Boek uw vlucht</h1>
             <br>
             <label><h3>Voornaam:</h3></label>
@@ -105,16 +105,18 @@
           <br>
           <br class="hide">
             <input type="submit" value="Boek uw vlucht" name="boekenSubmit">
-        </form>
-      </div>
+        </form> -->
+      <!-- </div> -->
+      <div class="boekingen">
+          <?php include("includes/boeking_read.php")?>
+        </div>
     <div class="containerboeken">
       <?php
           include_once('Includes/connecter.php');
-
+          $sql = "SELECT * FROM bestemmingen";
           $stmt = $connect->prepare($sql);
           $stmt->execute();
           $result = $stmt->fetchAll();
-
           foreach($result as $product) {
         ?>
       <!-- dit is een container boeken       -->
