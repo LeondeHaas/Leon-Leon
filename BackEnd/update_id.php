@@ -10,5 +10,5 @@ include ('../Includes/connecter.php');
     $stmt -> execute();
     $i = $stmt -> fetch();
 
-
+    
 ?>
