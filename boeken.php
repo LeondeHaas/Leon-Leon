@@ -95,6 +95,7 @@
                   <option name="vliegveld" value = "Amsterdam Airport" selected>Amsterdam Airport</option>
                   <option name="vliegveld" value = "Eindhoven Airport">Eindhoven Airport</option>
                   <option name="vliegveld" value = "Teuge Airport">Teuge Airport</option>
+                  <input type="" name="vliegveld"> 
                 </select>
             <br>
             <label><h3>Waar gaat u naartoe?</h3></label>
