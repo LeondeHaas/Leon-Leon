@@ -201,6 +201,7 @@
   justify-content: center;
   margin-top: 50px;
   box-shadow: 10px 10px;
+  margin-right: 50%;
 }
 
 .create_form_schema {
@@ -214,6 +215,7 @@
   justify-content: center;
   margin-top: 50px;
   box-shadow: 10px 10px;
+  margin-left: 50%;
 }
 
 .create_form_container {

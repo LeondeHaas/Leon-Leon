@@ -2,7 +2,7 @@
     if (isset ($_POST['update_bestemming'])){
         require_once('../Includes/connecter.php');
 
-        $sql = "UPDATE bestemmingen SET afbeelding = :afbeelding, land = :land, beschrijving = :beschrijving, kosten = :kosten WHERE id=id";
+        $sql = "UPDATE bestemmingen SET afbeelding = :afbeelding, land = :land, beschrijving = :beschrijving, kosten = :kosten WHERE id = id";
         $stmt = $connect->prepare($sql);
         $stmt->bindParam(':afbeelding', $_POST['afbeelding']);
         $stmt->bindParam(':land', $_POST['land']);
