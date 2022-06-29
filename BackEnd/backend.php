@@ -46,13 +46,14 @@
                     <td><h3><?php echo $product['afbeelding'];?></h3></td>
                     <td><p><?php echo $product['beschrijving'];?></p></td>
                     <td><h2>$<?php echo $product['kosten'];?></h2></td>
-                    <td><a href="updateform.php?id=<?php echo $product['id'];?>">
+                    <td><a href="updateform_best.php?id=<?php echo $product['id'];?>">
                     <button class="update">Update</button></a><td>            
                     <form method="POST" action="remove.php">
                     <input name="id" value="<?php echo $product['id']; ?>"type="hidden" readonly>
                     <input type="submit" name="verwijderen" value="Delete" class="delete">
                     </form>
                 </tr>              
+                
    <?php
         }
 ?>
@@ -63,7 +64,7 @@
                     <th>personen</th>
                     <th>vliegveld</th>
                     <th>bestemming</th>
-                    <th>update</th>
+                    <th></th>
                     <th>delete</th>
                 </tr>
                   <?php 
@@ -83,8 +84,7 @@
                     <td>hoeveel personen? <?php echo $product['personen'];?></td>
                     <td><?php echo $product['vliegveld'];?></td><
                     <td><?php echo $product['bestemming'];?></td>
-                    <td><a href="updateform.php?id=<?php echo $product['id'];?>">
-                    <button class="update">Update</button></a><td>            
+                    <td><td>            
                     <form method="POST" action="remove1.php">
                     <input name="id" value="<?php echo $product['id']; ?>"type="hidden" readonly>
                     <input type="submit" name="verwijderen" value="Delete" class="delete">
@@ -118,7 +118,7 @@
                     <td><?php echo $product['gate'];?></td>
                     <td><?php echo $product['bestemming'];?></td>
                     <td><?php echo $product['vliegtuig'];?></td><
-                    <td><a href="update.php?id=<?php echo $product['id'];?>">
+                    <td><a href="updateform_schem.php?id=<?php echo $product['id'];?>">
                     <button class="update">Update</button></a><td>            
                      <form method="POST" action="remove2.php">
                     <input name="id" value="<?php echo $product['id']; ?>"type="hidden" readonly>
