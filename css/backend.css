@@ -198,17 +198,16 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin-left: 40%;
   justify-content: center;
   margin-top: 50px;
   box-shadow: 10px 10px;
+  margin-right: 50%;
 }
 
 .create_form_schema {
   width: 400px;
   height: 500px;
   background-color: #555;
-  margin-right: 40%;
   position: absolute;
   display: flex;
   flex-wrap: wrap;
@@ -216,6 +215,7 @@
   justify-content: center;
   margin-top: 50px;
   box-shadow: 10px 10px;
+  margin-left: 50%;
 }
 
 .create_form_container {
@@ -242,6 +242,7 @@
 .create_form_reizen input {
   width: 90%;
   height: 35px;
+  text-align: center;
 }
 
 .create_form_reizen textarea {
