@@ -30,11 +30,11 @@
 
               $sql = "SELECT * FROM bestemmingen WHERE land LIKE '%". $search. "%'";
               } else {
-                $sql = "SELECT afbeelding, land, beschrijving, kosten FROM bestemmingen ORDER BY land DESC";
+                $sql = "SELECT * FROM bestemmingen ORDER BY land DESC";
 
               }
             ?>
-          <form action="boeken.php" method="POST">
+          <form action="bestellen.php" method="POST">
             <div class="search_bar">
               <input name="search" type="text" placeholder="Search.." /> 
             </div>
