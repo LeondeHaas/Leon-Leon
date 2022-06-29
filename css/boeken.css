@@ -341,6 +341,15 @@ h2 {
   align-items: center;
 }
 
+.boekingen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5% 0;
+  gap: 5rem;
+}
+
 @media only screen and (min-width: 400px) and (max-width: 1100px) {
   .bestemming {
     width: 90%;
